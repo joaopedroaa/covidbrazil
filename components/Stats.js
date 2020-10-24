@@ -1,48 +1,33 @@
-// import styled from 'styled-components';
-// import useStats from '../utils/useStats';
+import useStats from '../utils/useStats';
+import styles from '../styles/Covid.module.css'
 
-// const StatGrid = styled.div`
-//   display: flex;
-// `;
-// const StatBlock = styled.div`
-//   h3{
-//     margin: 0 0 18px 0;
-//   }
-//   background: #f2f2f2;
 
-//   width: 7rem;
-//   height: 7rem;
+export default function Stats({ url }) {
+  const { stats, loading, error } = useStats(url);
+  if (loading) return <p>Carregando...</p>;
+  if (error) return <p>Error...</p>;
 
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
+  const confirmed = stats.confirmed.value.toLocaleString(undefined, { minimumFractionDigits: 0 });;
+  const death = stats.deaths.value.toLocaleString(undefined, { minimumFractionDigits: 0 });;
+  const recovered = stats.recovered.value.toLocaleString(undefined, { minimumFractionDigits: 0 });;
 
-// `;
 
-// export default function Stats({ url }) {
-//   const { stats, loading, error } = useStats(url);
+  return (
+    <div className={styles.statsGrid}>
+      <div className={styles.statsBlock}>
+        <h3>{confirmed}</h3>
+        <span>Casos confirmados</span>
+      </div>
 
-//   if (loading) return <p>Carregando...</p>;
-//   if (error) return <p>Error...</p>;
+      <div className={styles.statsBlock}>
+        <h3>{death}</h3>
+        <span>Mortes</span>
+      </div>
 
-//   return (
-//     <StatGrid>
-//       <StatBlock>
-//         <h3>Confirmados</h3>
-//         <span>{stats.confirmed.value}</span>
-//       </StatBlock>
-
-//       <StatBlock>
-//         <h3>Mortos</h3>
-//         <span>{stats.deaths.value}</span>
-//       </StatBlock>
-
-//       <StatBlock>
-//         <h3>Recuperados</h3>
-//         <span>{stats.recovered.value}</span>
-//       </StatBlock>
-
-//     </StatGrid>
-//   );
-// }
+      <div className={styles.statsBlock}>
+        <h3 className={styles.recoveveredCasesColor}>{recovered}</h3>
+        <span>Recuperados</span>
+      </div>
+    </div>
+  );
+}

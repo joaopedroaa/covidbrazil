@@ -14,7 +14,7 @@ export default function CountrySelector() {
 
   return (
     <div>
-      <h2>GET {`https://covid19.mathdro.id/api/countries/${selectedCountry}`}</h2>
+      {/* <h2>GET {`https://covid19.mathdro.id/api/countries/${selectedCountry}`}</h2> */}
       <select
         onChange={e => {
           setSelectedCountry(e.target.value);

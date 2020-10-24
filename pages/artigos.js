@@ -2,15 +2,22 @@ const { default: next } = require("next");
 
 import Link from 'next/link'
 
+import stylesGeneral from '../styles/Styles.module.css'
+
+import Footer from "../components/Footer"
+import BackMenu from "../components/BackMenu"
+
 export default function artigos() {
 
   return (
-    <div>
-      <Link href="/">Menu inicial</Link>
-      {/* <GlobalStyle /> */}
-      <h1>Artigos page</h1>
+    <div className={stylesGeneral.container}>
+      <BackMenu />
 
-      {/* <RateOfChange /> */}
+
+      <h1>Artigos </h1>
+
+
+      {/* <Footer /> */}
     </div>
   )
 }

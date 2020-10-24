@@ -1,19 +1,22 @@
 import { useState } from 'react';
-import useStats from '../utils/useStats';
-import styles from '../styles/News.module.css'
 import Link from 'next/link'
+
+import styles from '../styles/News.module.css'
+import stylesGeneral from '../styles/Styles.module.css'
+
 import news from "../utils/offlineNews"
+import useStats from '../utils/useStats';
 import shuffle from "../utils/shuffle"
+
+import Footer from "../components/Footer"
+import BackMenu from "../components/BackMenu"
+
 
 export default function CountrySelector() {
   return (
-    <div className={styles.container}>
+    <div className={stylesGeneral.container}>
 
-      <h2>
-        <Link className={styles.backMenu} href="/">
-          &larr; Menu
-      </Link>
-      </h2>
+      <BackMenu/>
 
       <h1 className={styles.title}>  Últimas notícias</h1>
 
@@ -43,6 +46,7 @@ export default function CountrySelector() {
 
 
 
+      <Footer />
     </div >
   );
 }

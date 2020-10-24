@@ -1,11 +1,16 @@
 import Head from 'next/head'
 import Link from 'next/link'
+
 import styles from '../styles/Home.module.css'
+import stylesGeneral from '../styles/Styles.module.css'
+
+import Footer from "../components/Footer"
+
 
 export default function Home() {
 
   return (
-    <div className={styles.container}>
+    <div className={stylesGeneral.container}>
 
       <Head>
         <title>covidbrazil </title>
@@ -46,18 +51,10 @@ export default function Home() {
 
 
         </div>
-      {/* <img className={styles.covidImg} src="/covid.png"></img> */}
+        {/* <img className={styles.covidImg} src="/covid.png"></img> */}
       </main>
 
-
-      <footer className={styles.footer}>
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Rezende Rammel - 28° Mostra Tecnológica</a>
-      </footer>
+      <Footer />
     </div>
   )
 }

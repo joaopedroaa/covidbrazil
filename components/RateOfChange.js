@@ -17,6 +17,7 @@ import useStats from '../utils/useStats'
 
 function RateOfChange() {
   const endpoint = 'https://covid19.mathdro.id/api/daily'
+
   const { stats, loading, error } = useStats(endpoint)
   if (loading) {
     return <div>Loading ...</div>
@@ -29,7 +30,7 @@ function RateOfChange() {
       <h1>Confirmed Cases over time</h1>
       <ComposedChart
         width={1200}
-        height={700}
+        height={400}
         data={stats}
         margin={{
           top: 20,
