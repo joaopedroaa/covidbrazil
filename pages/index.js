@@ -22,19 +22,21 @@ export default function Home() {
 
 
         <div className={styles.grid}>
-          <Link href="numeros">
-            <p href="" className={styles.card}>
+          <Link href="/numeros">
+            <a className={styles.card}>
               <h3 >Numeros &rarr; </h3>
               <p>Alguns numeros explicabo aspernatur rem pariatur vitae.</p>
-            </p>
-          </Link>
+            </a>
+          </Link >
 
-          <Link href="artigos">
-            <p href="" className={styles.card}>
+          <Link href="/artigos">
+            <a className={styles.card}>
               <h3>Artigos &rarr; </h3>
               <p>Para voce ficar informado e ajudar na prevencao do virus.</p>
-            </p>
+            </a>
           </Link>
+
+
         </div>
       </main>
 

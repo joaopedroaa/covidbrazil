@@ -9,12 +9,12 @@ export default function CountrySelector() {
 
   const [selectedCountry, setSelectedCountry] = useState('BRA');
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Carregando...</p>;
   if (error) return <p>Error...</p>;
 
   return (
     <div>
-      <h2>{`https://covid19.mathdro.id/api/countries/${selectedCountry}`}</h2>
+      <h2>GET {`https://covid19.mathdro.id/api/countries/${selectedCountry}`}</h2>
       <select
         onChange={e => {
           setSelectedCountry(e.target.value);

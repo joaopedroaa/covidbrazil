@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
+import Link from 'next/link'
+
 import useStats from '../utils/useStats'
 
 import Stats from '../components/Stats'
@@ -12,6 +13,7 @@ export default function artigos() {
 
   return (
     <div>
+      <Link href="/">Menu inicial</Link>
       {/* <GlobalStyle /> */}
       <h1>Brasil</h1>
       <Stats url="https://covid19.mathdro.id/api/countries/BRA"></Stats>

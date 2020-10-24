@@ -10,9 +10,7 @@
   "dependencies": {
     "next": "9.5.5",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
-  },
-  "devDependencies": {
+    "react-dom": "17.0.1",
     "recharts": "^1.8.5",
     "styled-components": "^5.2.0"
   }

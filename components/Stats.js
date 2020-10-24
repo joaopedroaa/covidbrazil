@@ -23,7 +23,7 @@ const StatBlock = styled.div`
 export default function Stats({ url }) {
   const { stats, loading, error } = useStats(url);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Carregando...</p>;
   if (error) return <p>Error...</p>;
 
   return (
