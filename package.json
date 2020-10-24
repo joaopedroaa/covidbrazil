@@ -1,19 +1,19 @@
 {
-  "name": "corona",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "covidbrazil",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "next"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "next": "^9.3.0",
-    "normalize.css": "^8.0.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
+    "next": "9.5.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
     "recharts": "^1.8.5",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.2.0"
   }
 }

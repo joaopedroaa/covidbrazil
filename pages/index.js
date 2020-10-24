@@ -1,23 +1,51 @@
-import { createGlobalStyle } from 'styled-components'
-import useStats from '../utils/useStats'
-import Stats from '../components/Stats'
-import CountrySelector from '../components/CountrySelector'
-import RateOfChange from '../components/RateOfChange'
+import Head from 'next/head'
+import Link from 'next/link'
 
-// const GlobalStyle = createGlobalStyle`
-//   html {
-//     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-//   }
-// `
+import styles from '../styles/Home.module.css'
 
-export default function IndexPage() {
+export default function Home() {
   return (
-    <div>
-      {/* <GlobalStyle /> */}
-      <h1>Brasil</h1>
-      <Stats url="https://covid19.mathdro.id/api/countries/BRA"></Stats>
-      <CountrySelector></CountrySelector>
-      {/* <RateOfChange /> */}
+    <div className={styles.container}>
+      <Head>
+        <title>covidbrazil</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main className={styles.main}>
+        <h1 className={styles.title}>
+          covid<span>brazil</span>
+        </h1>
+
+        <p className={styles.description}>
+          Uma plataforma, que recebe, em tempo real, dados sobre casos epidemiológicos, tem o número de casos, mortes, recuperações, e informações novas sobre a doença. Com o objetivo de previnir o usuário.
+        </p>
+
+
+        <div className={styles.grid}>
+          <Link href="numeros">
+            <p href="" className={styles.card}>
+              <h3 >Numeros &rarr; </h3>
+              <p>Alguns numeros explicabo aspernatur rem pariatur vitae.</p>
+            </p>
+          </Link>
+
+          <Link href="artigos">
+            <p href="" className={styles.card}>
+              <h3>Artigos &rarr; </h3>
+              <p>Para voce ficar informado e ajudar na prevencao do virus.</p>
+            </p>
+          </Link>
+        </div>
+      </main>
+
+      <footer className={styles.footer}>
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Rezende Rammel - 28° Mostra Tecnológica</a>
+      </footer>
     </div>
   )
 }

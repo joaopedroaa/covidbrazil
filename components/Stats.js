@@ -29,7 +29,7 @@ export default function Stats({ url }) {
   return (
     <StatGrid>
       <StatBlock>
-        <h3>Comfirmados</h3>
+        <h3>Confirmados</h3>
         <span>{stats.confirmed.value}</span>
       </StatBlock>
 
