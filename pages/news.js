@@ -3,13 +3,14 @@ import useStats from '../utils/useStats';
 import styles from '../styles/News.module.css'
 import Link from 'next/link'
 import news from "../utils/offlineNews"
+import shuffle from "../utils/shuffle"
 
 export default function CountrySelector() {
   return (
     <div className={styles.container}>
 
       <h2>
-        <Link className={styles.menu} href="/">
+        <Link className={styles.backMenu} href="/">
           &larr; Menu
       </Link>
       </h2>
@@ -19,7 +20,7 @@ export default function CountrySelector() {
       <p className={styles.description}>coronavírus</p>
 
       <div className={styles.grid}>
-        {news.articles.map((news, code) => (
+        {shuffle(news.articles).map((news, code) => (
           <a href={news.url}
             target="_blank"
             rel="noopener noreferrer"
@@ -29,12 +30,8 @@ export default function CountrySelector() {
 
               <img src={news.urlToImage} alt="" srcset="" />
               <div className={styles.newsText}>
-
-                <p>
-                  {news.title}
-                </p>
-
-                <p> {news.source.name}</p>
+                <p className={styles.newsTextTitle}> {news.title}</p>
+                <p className={styles.newsTextSource}> {news.author}</p>
               </div>
             </div>
           </a>

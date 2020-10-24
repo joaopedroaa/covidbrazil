@@ -7,6 +7,15 @@
   align-items: center;
 }
 
+.menu {
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 2.7rem;
+  margin-top: 3rem;
+}
+
 .grid {
   display: flex;
   align-items: center;
@@ -21,7 +30,7 @@
   line-height: 1.5;
   font-size: 1.2rem;
   max-width: 1200px;
-  background-color: #00A600;
+  background-color: #00a600;
   color: white;
   padding: 5px 10px;
   border-radius: 20px;
@@ -29,7 +38,7 @@
 
 .card {
   display: flex;
-  width: 400px;
+  width: 410px;
   height: 170px;
 
   text-decoration: none;
@@ -47,27 +56,23 @@
 
 .card img {
   border-radius: 10px 0 0 10px;
-  width: 200px;
+  width: 210px;
   height: 170px;
 }
 
 .newsText {
-  padding: 10px;
-}
-
-.menu {
-  font-size: 1rem;
-}
-
-.title {
-  font-size: 2.7rem;
-  margin-top: 3rem;
-}
-
-.load {
-  width: 100%;
-  height: 100%;
-
+  padding: 0 10px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.newsTextTitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.newsTextSource {
+  font-size: 0.9rem;
+  color: #404040;
 }

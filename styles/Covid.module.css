@@ -1,0 +1,50 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.statsGrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 800px;
+  height: 7rem;
+
+  padding: 0 20px;
+  /* background-color: red; */
+  /* background: #f2f2f2; */
+  border-radius: 20px;
+  /* border: 1px solid #eaeaea; */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.statsBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statsBlock h3 {
+  margin: 0 0 18px 0;
+  font-size: 2rem;
+  color: #eb4559;
+}
+
+.statsBlock span {
+  font-size: 1rem;
+  color: #404040;
+}
+
+.statsBlock .recoveveredCasesColor{
+  color: #00A600;
+}
+
+.backMenu {
+  font-size: 1rem;
+}
