@@ -1,52 +1,68 @@
 import { useState } from 'react';
 import useStats from '../utils/useStats';
 import styles from '../styles/News.module.css'
+import Link from 'next/link'
 
 // import Stats from './Stats';
 
 export default function CountrySelector() {
-  const { stats: news, loading, error } = useStats(
-    "https://google-news.p.rapidapi.com/v1/search?country=BR&lang=pt&q=corona",
-    "google-news.p.rapidapi.com",
-    process.env.NEXT_PUBLIC_GOOGLE_NEWS_API_KEY
-  );
+  const newsapilink = "https://newsapi.org/v2/everything?" +
+    "q=coronavírus&" +
+    "sortBy=popularity&" +
+    "apiKey=73c1cb62bd2444f29cda26ce59eb748f"
 
-  // const { stats: news, loading, error } = useStats(
-  //   'http://newsapi.org/v2/top-headlines?' +
-  //   "country=br&" +
-  //   "q=pandemia&" +
-  //   "sortBy=popularity&" +
-  //   "apiKey=73c1cb62bd2444f29cda26ce59eb748f"
-  // );
+  const { stats: news, loading, error } = useStats(newsapilink);
 
-  if (loading) return <p>Carregando...</p>;
-  if (error) return <p>Error...</p>;
+
+
+  if (loading) return <p className={styles.container}> <img src="https://assets.materialup.com/uploads/e21b405b-4e2a-48dc-9181-625a37c1eae8/preview.gif" alt="" srcset="" /></p>;
+  if (error) return <p className={styles.container}>Erro ao carregar notícias</p>;
 
   return (
-    <div>
-      <h1>Últimas notícias</h1>
+    <div className={styles.container}>
 
-      {news.articles.map((news, code) => (
-        <div className={styles.news}>
+      <h2>
+        <Link className={styles.menu} href="/">
+          &larr; Menu
+      </Link>
+      </h2>
+
+      <h1 className={styles.title}>  Últimas notícias</h1>
+
+      <p className={styles.description}>coronavírus</p>
+
+      <div className={styles.grid}>
+        {news.articles.map((news, code) => (
           <a href={news.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {news.source.name}
+
+
+            <div className={styles.card}>
+
+              <img src={news.urlToImage} alt="" srcset="" />
+              <div className={styles.newsText}>
+
+
+                <p>
+                  {news.title}
+                </p>
+
+
+
+                <p> {news.source.name}</p>
+              </div>
+            </div>
           </a>
 
-          <p>
-
-            {news.title}
-          </p>
-        </div>
 
 
-
-      ))}
+        ))}
+      </div>
 
 
 
-    </div>
+    </div >
   );
 }
