@@ -1,25 +1,41 @@
 import { useState, useEffect } from 'react';
 
-export default function useStats(url) {
+export default function useStats(url, rapidapiHost, rapidapiKey) {
   const [stats, setStats] = useState();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState();
+
   useEffect(() => {
     console.log('Mounting or updating');
+
     async function fetchData() {
       setLoading(true);
       setError();
+
       console.log('Fetching Data');
-      const data = await fetch(url)
+
+
+      const data = await fetch(url, rapidapiHost && {
+        "headers": {
+          "x-rapidapi-host": rapidapiHost,
+          "x-rapidapi-key": rapidapiKey
+        }
+      })
         .then(res => res.json())
         .catch(err => {
           setError(err);
         });
+
+
       setStats(data);
       setLoading(false);
+
     }
+
     fetchData();
+
   }, [url]);
+
   return {
     stats,
     loading,

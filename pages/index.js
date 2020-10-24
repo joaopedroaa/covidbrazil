@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link'
-
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
+
       <Head>
-        <title>covidbrazil</title>
+        <title>covidbrazil </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -33,6 +34,13 @@ export default function Home() {
             <a className={styles.card}>
               <h3>Artigos &rarr; </h3>
               <p>Para voce ficar informado e ajudar na prevencao do virus.</p>
+            </a>
+          </Link>
+
+          <Link href="/news">
+            <a className={styles.card}>
+              <h3>Notícias &rarr; </h3>
+              <p>Para ficar informado. Lorem ipsum dolor sit amet consectetur.</p>
             </a>
           </Link>
 
