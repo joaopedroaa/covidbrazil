@@ -32,3 +32,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+
+sw.js*
+workbox-f88dbe3b.js*
