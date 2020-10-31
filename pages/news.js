@@ -26,12 +26,11 @@ export default function CountrySelector() {
         {shuffle(news.articles).map((news, code) => (
           <a href={news.url}
             target="_blank"
+            key={code}
             rel="noopener noreferrer"
           >
-
             <div className={styles.card}>
-
-              <img src={news.urlToImage} alt="" srcset="" />
+              <img src={news.urlToImage} alt="" srcSet="" />
               <div className={styles.newsText}>
                 <p className={styles.newsTextTitle}> {news.title}</p>
                 <p className={styles.newsTextSource}> {news.author}</p>

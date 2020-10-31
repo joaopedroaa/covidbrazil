@@ -13,7 +13,7 @@ export default function Home() {
     <div className={stylesGeneral.container}>
 
       <Head>
-        <title>covidbrazil </title>
+        <title>covidbrazil</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

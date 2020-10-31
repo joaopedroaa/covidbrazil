@@ -15,7 +15,7 @@
 .grid {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 
   max-width: 1600px;
@@ -37,17 +37,30 @@
   width: 410px;
   height: 170px;
 
-  text-decoration: none;
+  margin: 20px 10px ;
+
   border: 1px solid #eaeaea;
   border-radius: 10px;
-  margin: 20px;
+
+  text-decoration: none;
   color: inherit;
-  border-radius: 10px;
   overflow: hidden;
+  transition: 0.2s
+}
+
+@media (max-width: 800px) {
+  .card {
+    margin: 20px 0;
+  }
 }
 
 .card:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: 0.2s;
 }
 
 .card img {
