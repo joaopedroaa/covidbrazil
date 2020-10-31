@@ -30,21 +30,21 @@ export default function Home() {
         <div className={styles.grid}>
           <Link href="/numeros">
             <a className={styles.card}>
-              <h3 >Numeros &rarr; </h3>
+              <h3 className={styles.cardTitle}>Numeros </h3>
               <p>Alguns numeros explicabo aspernatur rem pariatur vitae.</p>
             </a>
           </Link >
 
           <Link href="/artigos">
             <a className={styles.card}>
-              <h3>Artigos &rarr; </h3>
+              <h3 className={styles.cardTitle}>Artigos </h3>
               <p>Para voce ficar informado e ajudar na prevencao do virus.</p>
             </a>
           </Link>
 
           <Link href="/news">
             <a className={styles.card}>
-              <h3>Notícias &rarr; </h3>
+              <h3 className={styles.cardTitle}>Notícias </h3>
               <p>Para ficar informado. Lorem ipsum dolor sit amet consectetur.</p>
             </a>
           </Link>
@@ -52,9 +52,9 @@ export default function Home() {
 
         </div>
         {/* <img className={styles.covidImg} src="/covid.png"></img> */}
-      </main>
+      </main >
 
       <Footer />
-    </div>
+    </div >
   )
 }
