@@ -80,6 +80,13 @@
 
 }
 
+.cardTitle  {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+
 .cardTitle::after  {
   content: "→";
   position: absolute;

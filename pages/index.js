@@ -30,21 +30,21 @@ export default function Home() {
         <div className={styles.grid}>
           <Link href="/numeros">
             <a className={styles.card}>
-              <h3 className={styles.cardTitle}>Informações</h3>
+              <h2 className={styles.cardTitle}>Informações</h2>
               <p>Alguns numeros explicabo aspernatur rem pariatur vitae.</p>
             </a>
           </Link >
 
           <Link href="/artigos">
             <a className={styles.card}>
-              <h3 className={styles.cardTitle}>Artigos </h3>
+              <h2 className={styles.cardTitle}>Artigos </h2>
               <p>Para voce ficar informado e ajudar na prevencao do virus.</p>
             </a>
           </Link>
 
           <Link href="/news">
             <a className={styles.card}>
-              <h3 className={styles.cardTitle}>Notícias </h3>
+              <h2 className={styles.cardTitle}>Notícias </h2>
               <p>Para ficar informado. Lorem ipsum dolor sit amet consectetur.</p>
             </a>
           </Link>
