@@ -1,6 +1,21 @@
-# covidbrazil
+# Covidbrazil
 
 Uma plataforma, que recebe, em tempo real, dados sobre casos epidemiológicos, tem o número de casos, mortes, recuperações, e informações novas sobre a doença. Com o objetivo de previnir o usuário.
+
+---
+
+## Android
+<img src="./.github/image/android.jpeg" height="400px"/>
+
+## Linux
+<img src="./.github/image/linux.png" height="400px" width="540px"/>
+
+## Windows
+<img src="./.github/image/windows.png" height="400px" width="540px"/>
+
+
+
+
 
 
 ## APIs
@@ -12,9 +27,3 @@ Brazil
 https://covid19-brazil-api-docs.now.sh/
 
 
-73c1cb62bd2444f29cda26ce59eb748f
-
-http://newsapi.org/v2/top-headlines?country=br&q=pandemia&sortBy=popularity&apiKey=73c1cb62bd2444f29cda26ce59eb748f
-
-
-http://newsapi.org/v2/top-headlines?country=br&q=covid-19&sortBy=popularity&apiKey=73c1cb62bd2444f29cda26ce59eb748f
