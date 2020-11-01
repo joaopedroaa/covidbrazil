@@ -5,7 +5,7 @@ export default function footer() {
     <>
       <footer className={styles.footer}>
         <a
-          href=""
+          href="http://etrr.com.br/"
           target="_blank"
           rel="noopener noreferrer"
         >
