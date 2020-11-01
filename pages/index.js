@@ -23,14 +23,14 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Uma plataforma, que recebe, em tempo real, dados sobre casos epidemiológicos, tem o número de casos, mortes, recuperações, e informações novas sobre a doença. Com o objetivo de previnir o usuário.
+          Uma plataforma, que recebe, em tempo real, dados sobre casos epidemiológicos, com o número de casos, mortes, recuperações, e informações novas sobre a doença. Com o objetivo de previnir o usuário.
         </p>
 
 
         <div className={styles.grid}>
           <Link href="/numeros">
             <a className={styles.card}>
-              <h3 className={styles.cardTitle}>Numeros </h3>
+              <h3 className={styles.cardTitle}>Informações</h3>
               <p>Alguns numeros explicabo aspernatur rem pariatur vitae.</p>
             </a>
           </Link >

@@ -7,6 +7,27 @@
   align-items: center;
 }
 
+.section{
+  padding: 100px 0;
+}
+
+.backMenu {
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 2.7rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.subtitle{
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/*  */
+
 .statsGrid {
   display: flex;
   align-items: center;
@@ -45,6 +66,27 @@
   color: #00A600;
 }
 
-.backMenu {
-  font-size: 1rem;
+
+
+/* ------ */
+
+.covidMap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.covidMap h2{
+  margin-bottom: 7px;
+}
+.covidMap p{
+  margin: 0;
+  color: #404040;
+  font-size: 0.8rem;
+}
+
+
+.covidMap .covidMapImg{
+  margin-top: 40px;
+  max-width: 1600px;
 }

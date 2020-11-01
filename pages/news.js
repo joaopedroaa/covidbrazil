@@ -10,6 +10,7 @@ import shuffle from "../utils/shuffle"
 
 import Footer from "../components/Footer"
 import BackMenu from "../components/BackMenu"
+import FormatSvg from "../components/FormatSvg"
 
 
 export default function CountrySelector() {
@@ -17,8 +18,10 @@ export default function CountrySelector() {
     <div className={stylesGeneral.container}>
 
       <BackMenu/>
+      <FormatSvg src="newspaper"/>
 
       <h1 className={styles.title}>  Últimas notícias</h1>
+
 
       <p className={styles.description}>coronavírus</p>
 
