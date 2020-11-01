@@ -35,7 +35,7 @@
 
 .card {
   display: flex;
-  max-width: 410px;
+  max-width: 450px;
   max-height: 170px;
 
   margin: 20px 10px ;
@@ -49,22 +49,24 @@
 
 }
 
+.card img {
+  border-radius: 10px 0 0 10px;
+
+  width: 220px;
+  height: 170px;
+}
 
 .card:hover {
   border: 1px solid transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
 
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   transform: translateY(-5px);
   transition: 0.2s;
 }
 
-.card img {
-  border-radius: 10px 0 0 10px;
 
-  width: 210px;
-  height: 170px;
-}
 
 .newsText {
   display: flex;
@@ -91,23 +93,23 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 470px) {
   .card {
     margin: 20px 0;
     flex-direction: column;
     max-height: none;
-    max-width: 270px;
+    max-width: 290px;
+
   }
 
   .card img {
     border-radius: 10px 10px 0 0;
 
-    width: 270px;
-    height: 210px;
+    width: 100%;
+    height: auto;
+    max-width: 290px;
+    max-height: 190px;
   }
 }
-@media (max-width: 280px) {
-  .card img {
-    display: none;
-  }
-}
+
+

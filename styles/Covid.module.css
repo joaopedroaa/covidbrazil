@@ -94,9 +94,12 @@
 
 
 .covidMap .covidMapImg{
+  margin-top: 40px;
+
+
   width: 100%;
   height: auto;
-  max-height: 300px;
 
+  max-width: 1600px;
   margin-top: 40px;
 }

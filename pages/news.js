@@ -52,8 +52,6 @@ export default function News() {
         ))}
       </div>
 
-
-
       <Footer />
     </div >
   );
