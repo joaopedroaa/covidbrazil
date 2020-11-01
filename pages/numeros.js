@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
 import useStats from '../utils/useStats'
 
@@ -22,9 +23,15 @@ export default function artigos() {
   return (
 
     <div className={stylesGeneral.container}>
+      <Head>
+        <title>Covid Brazil / Informações</title>
+        <link rel="icon" href="/icons/android-chrome-192x192.png" />
+      </Head>
+
+
       <BackMenu />
 
-      <FormatSvg src="empty_street"/>
+      <FormatSvg src="empty_street" />
       <h1 className={styles.title}>Informações</h1>
 
       <section className={styles.section}>

@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link'
+import Head from 'next/head'
+
 
 import styles from '../styles/News.module.css'
 import stylesGeneral from '../styles/Styles.module.css'
@@ -13,12 +15,16 @@ import BackMenu from "../components/BackMenu"
 import FormatSvg from "../components/FormatSvg"
 
 
-export default function CountrySelector() {
+export default function News() {
   return (
     <div className={stylesGeneral.container}>
+      <Head>
+        <title>Covid Brazil / Notícias</title>
+        <link rel="icon" href="/icons/android-chrome-192x192.png" />
+      </Head>
 
-      <BackMenu/>
-      <FormatSvg src="newspaper"/>
+      <BackMenu />
+      <FormatSvg src="newspaper" />
 
       <h1 className={styles.title}>  Últimas notícias</h1>
 

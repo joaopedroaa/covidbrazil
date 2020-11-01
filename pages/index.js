@@ -13,8 +13,8 @@ export default function Home() {
     <div className={stylesGeneral.container}>
 
       <Head>
-        <title>covidbrazil</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Covid Brazil</title>
+        <link rel="icon" href="/icons/android-chrome-192x192.png" />
       </Head>
 
       <main className={styles.main}>

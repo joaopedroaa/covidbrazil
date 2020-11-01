@@ -1,6 +1,8 @@
 const { default: next } = require("next");
 
 import Link from 'next/link'
+import Head from 'next/head'
+
 
 import stylesGeneral from '../styles/Styles.module.css'
 
@@ -11,6 +13,12 @@ export default function artigos() {
 
   return (
     <div className={stylesGeneral.container}>
+      <Head>
+        <title>Covid Brazil / Artigos</title>
+        <link rel="icon" href="/icons/android-chrome-192x192.png" />
+      </Head>
+
+
       <BackMenu />
 
 
