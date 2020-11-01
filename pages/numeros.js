@@ -1,11 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
-import useStats from '../utils/useStats'
 
 import Stats from '../components/Stats'
-import CountrySelector from '../components/CountrySelector'
-import RateOfChange from '../components/RateOfChange'
 import Footer from "../components/Footer"
 import BackMenu from "../components/BackMenu"
 import DeathNumber from "../components/DeathNumber"
@@ -14,8 +11,6 @@ import FormatSvg from "../components/FormatSvg"
 import styles from '../styles/Covid.module.css'
 import stylesGeneral from '../styles/Styles.module.css'
 
-
-const { default: next } = require("next");
 
 export default function artigos() {
 
