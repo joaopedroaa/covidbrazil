@@ -30,6 +30,7 @@
 
 .backMenu {
   font-size: 1rem;
+  text-align: center;
 }
 
 .title {
@@ -43,3 +44,7 @@
   height: auto;
   max-height: 300px;
 }
+
+
+
+

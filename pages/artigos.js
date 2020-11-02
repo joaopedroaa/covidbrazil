@@ -19,12 +19,9 @@ export default function artigos() {
         <link rel="icon" href="/icons/android-chrome-192x192.png" />
       </Head>
 
-
       <BackMenu />
       <FormatSvg src="articles" />
-
       <h1 className={stylesGeneral.title}>Artigos</h1>
-
 
       <Footer />
     </div>

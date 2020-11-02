@@ -31,14 +31,14 @@ export default function Home() {
           <Link href="/numeros">
             <a className={styles.card}>
               <h2 className={styles.cardTitle}>Informações</h2>
-              <p>Alguns numeros explicabo aspernatur rem pariatur vitae.</p>
+              <p>Algumas informações importantes para ajudar na prevenção.</p>
             </a>
           </Link >
 
           <Link href="/artigos">
             <a className={styles.card}>
               <h2 className={styles.cardTitle}>Artigos </h2>
-              <p>Para voce ficar informado e ajudar na prevencao do virus.</p>
+              <p>Artigos criados por alunos da Rezende Rammel.</p>
             </a>
           </Link>
 
@@ -48,6 +48,7 @@ export default function Home() {
               <p>As últimas notícias para você ficar informado.</p>
             </a>
           </Link>
+
           <Link href="/dashboard">
             <a className={styles.card}>
               <h2 className={styles.cardTitle}>Dashboard </h2>

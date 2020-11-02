@@ -1,10 +1,29 @@
-
-import styles from '../styles/Styles.module.css'
 import Link from 'next/link'
 
-export default function Deashboard() {
+import styles from '../styles/Dashboard.module.css'
+import stylesHome from '../styles/Home.module.css'
+import stylesGeneral from '../styles/Styles.module.css'
+
+import Footer from "../components/Footer"
+import BackMenu from "../components/BackMenu"
+import FormatSvg from "../components/FormatSvg"
+
+
+export default function Dashboard() {
   return (
-      //  <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="COVID-19" src="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"></iframe>
-       <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="COVID-19" src="http://google.com/"></iframe>
+    <div className={stylesGeneral.container}>
+      <BackMenu />
+      <FormatSvg src="dashboard" />
+      <h1 className={stylesGeneral.title}>Johns Hopkins Dashboard</h1>
+      <p className={stylesHome.description}>Os especialistas da Johns Hopkins em saúde pública global, doenças infecciosas e preparação para emergências estão na vanguarda da resposta internacional ao COVID-19. Este dashboard é um recurso para ajudar a avançar na compreensão do vírus, informar o público e informar os legisladores a fim de orientar uma resposta, melhorar o atendimento e salvar vidas.</p>
+
+
+      <Link href="/dashboard/open" >
+        <button className={styles.button}>
+          Abrir
+        </button>
+      </Link >
+    </div>
+
   )
 }
