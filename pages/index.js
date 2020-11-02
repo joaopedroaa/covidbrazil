@@ -1,3 +1,4 @@
+const { default: next } = require("next");
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -11,7 +12,6 @@ export default function Home() {
 
   return (
     <div className={stylesGeneral.container}>
-
       <Head>
         <title>Covid Brazil</title>
         <link rel="icon" href="/icons/android-chrome-192x192.png" />
@@ -45,7 +45,13 @@ export default function Home() {
           <Link href="/news">
             <a className={styles.card}>
               <h2 className={styles.cardTitle}>Notícias </h2>
-              <p>Para ficar informado. Lorem ipsum dolor sit amet consectetur.</p>
+              <p>As últimas notícias para você ficar informado.</p>
+            </a>
+          </Link>
+          <Link href="/dashboard">
+            <a className={styles.card}>
+              <h2 className={styles.cardTitle}>Dashboard </h2>
+              <p>O dashboard da Johns Hopkins é o mais completo do mundo.</p>
             </a>
           </Link>
 

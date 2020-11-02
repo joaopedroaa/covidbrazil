@@ -7,10 +7,6 @@
   align-items: center;
 }
 
-.title {
-  font-size: 2.7rem;
-  margin-top: 3rem;
-}
 
 .grid {
   display: flex;

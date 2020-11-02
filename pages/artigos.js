@@ -8,6 +8,7 @@ import stylesGeneral from '../styles/Styles.module.css'
 
 import Footer from "../components/Footer"
 import BackMenu from "../components/BackMenu"
+import FormatSvg from "../components/FormatSvg"
 
 export default function artigos() {
 
@@ -20,12 +21,12 @@ export default function artigos() {
 
 
       <BackMenu />
+      <FormatSvg src="articles" />
+
+      <h1 className={stylesGeneral.title}>Artigos</h1>
 
 
-      <h1>Artigos </h1>
-
-
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

@@ -102,4 +102,10 @@
 
   max-width: 1600px;
   margin-top: 40px;
+
+  border-radius: 20px;
+}
+
+.covidMap .covidMapImgDescription{
+  margin-left: auto;
 }

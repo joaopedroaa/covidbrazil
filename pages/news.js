@@ -1,4 +1,5 @@
 import { useState } from 'react';
+const { default: next } = require("next");
 import Link from 'next/link'
 import Head from 'next/head'
 
@@ -33,7 +34,7 @@ export default function News() {
       <BackMenu />
       <FormatSvg src="newspaper" />
 
-      <h1 className={styles.title}>  Últimas notícias</h1>
+      <h1 className={stylesGeneral.title}>Últimas notícias</h1>
 
       <p className={styles.description}>coronavírus</p>
 
