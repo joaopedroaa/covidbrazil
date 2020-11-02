@@ -23,6 +23,7 @@ export default function Dashboard() {
           Abrir
         </button>
       </Link >
+      {/* <Footer /> */}
     </div>
 
   )
