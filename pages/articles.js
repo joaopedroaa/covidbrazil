@@ -24,9 +24,7 @@ export default function artigos() {
 
 
 
-
-
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

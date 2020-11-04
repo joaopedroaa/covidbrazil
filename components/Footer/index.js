@@ -3,12 +3,8 @@ import styles from './Footer.module.css'
 export default function footer() {
   return (
     <footer className={styles.footer}>
-      <a
-        href="http://etrr.com.br/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Rezende Rammel - 28° Mostra Tecnológica</a>
+      <p>Rezende Rammel</p>
+      <p>28° Mostra Tecnológica</p>
     </footer>
 
   )

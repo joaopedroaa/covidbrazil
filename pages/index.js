@@ -60,7 +60,7 @@ export default function Home() {
 
 
         </div>
-        {/* <img className={styles.covidImg} src="/covid.png"></img> */}
+
       </main >
 
       <Footer />
