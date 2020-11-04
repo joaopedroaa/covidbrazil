@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-const APP_NAME = 'next-pwa example'
-const APP_DESCRIPTION = 'This is an example of using next-pwa plugin'
+const APP_NAME = 'Covid Brasil'
+const APP_DESCRIPTION = 'Uma plataforma, que recebe, em tempo real, dados sobre casos epidemiológicos'
 
 export default class extends Document {
   static async getInitialProps(ctx) {
@@ -10,7 +10,7 @@ export default class extends Document {
 
   render() {
     return (
-      <Html lang='en' dir='ltr'>
+      <Html lang='pt-br' dir='ltr'>
         <Head>
           <meta name='application-name' content={APP_NAME} />
           <meta name='apple-mobile-web-app-capable' content='yes' />
@@ -21,11 +21,9 @@ export default class extends Document {
           <meta name='mobile-web-app-capable' content='yes' />
           <meta name='theme-color' content='#FFFFFF' />
           {/* TIP: set viewport head meta tag in _app.js, otherwise it will show a warning */}
-          {/* <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' /> */}
-
           <link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png' />
+          <link rel='shortcut icon' href='/icons/android-chrome-192x192.png' />
           <link rel='manifest' href='/manifest.json' />
-          <link rel='shortcut icon' href='/icons/favicon.ico' />
           <style>{
             `
             html, body, #__next {
