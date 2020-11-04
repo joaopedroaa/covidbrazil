@@ -1,0 +1,45 @@
+
+
+.statsGrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+
+  padding: 0 20px;
+  margin: 0 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.statsBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 18px 60px;
+}
+
+/* @media (max-width: 870px) {
+
+  .statsGrid {
+    flex-direction: column;
+  }
+} */
+
+.statsBlock h3 {
+  margin: 0 0 18px 0;
+  font-size: 2rem;
+  color: #eb4559;
+}
+
+.statsBlock span {
+  font-size: 1rem;
+  color: #404040;
+}
+
+.statsBlock .recoveveredCasesColor {
+  color: #00a600;
+}

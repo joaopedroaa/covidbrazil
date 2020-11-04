@@ -1,14 +1,13 @@
-const { default: next } = require("next");
-
-import Link from 'next/link'
 import Head from 'next/head'
 
-
-import stylesGeneral from '../styles/Styles.module.css'
-
+// Components
 import Footer from "../components/Footer"
 import BackMenu from "../components/BackMenu"
 import FormatSvg from "../components/FormatSvg"
+
+// Styles
+import stylesGeneral from '../styles/Styles.module.css'
+
 
 export default function artigos() {
 
@@ -22,6 +21,10 @@ export default function artigos() {
       <BackMenu />
       <FormatSvg src="articles" />
       <h1 className={stylesGeneral.title}>Artigos</h1>
+
+
+
+
 
       <Footer />
     </div>

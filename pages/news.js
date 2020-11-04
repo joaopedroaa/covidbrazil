@@ -1,18 +1,18 @@
-import { useState } from 'react';
-const { default: next } = require("next");
-import Link from 'next/link'
 import Head from 'next/head'
 
-import styles from '../styles/News.module.css'
-import stylesGeneral from '../styles/Styles.module.css'
-
-import news from "../utils/offlineNews"
-import useStats from '../utils/useStats';
-import shuffle from "../utils/shuffle"
-
+// Components
 import Footer from "../components/Footer"
 import BackMenu from "../components/BackMenu"
 import FormatSvg from "../components/FormatSvg"
+
+// Utils
+import news from "../utils/offlineNews"
+import shuffle from "../utils/shuffle"
+import useStats from '../utils/useStats';
+
+// Styles
+import styles from '../styles/News.module.css'
+import stylesGeneral from '../styles/Styles.module.css'
 
 
 export default function News() {
@@ -53,7 +53,6 @@ export default function News() {
               </div>
             </div>
           </a>
-
 
 
         ))}

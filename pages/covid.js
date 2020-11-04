@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import Head from 'next/head'
 
-
+// Components
 import Stats from '../components/Stats'
 import StatsBrazil from "../components/StatsBrazil"
 import Footer from "../components/Footer"
@@ -9,6 +8,7 @@ import BackMenu from "../components/BackMenu"
 import DeathNumber from "../components/DeathNumber"
 import FormatSvg from "../components/FormatSvg"
 
+// Styles
 import styles from '../styles/Covid.module.css'
 import stylesGeneral from '../styles/Styles.module.css'
 

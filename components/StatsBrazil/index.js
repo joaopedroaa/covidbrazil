@@ -1,6 +1,6 @@
-import useStats from '../utils/useStats';
+import useStats from '../../utils/useStats';
 
-import styles from '../styles/StatsBrazil.module.css'
+import styles from './StatsBrazil.module.css'
 
 
 export default function Stats() {

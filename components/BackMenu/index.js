@@ -1,4 +1,4 @@
-import styles from '../styles/Styles.module.css'
+import styles from './BackMenu.module.css'
 import Link from 'next/link'
 
 export default function backMenu() {

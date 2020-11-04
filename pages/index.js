@@ -1,11 +1,13 @@
-const { default: next } = require("next");
 import Head from 'next/head'
 import Link from 'next/link'
 
+// Components
+// const { default: next } = require("next");
+import Footer from "../components/Footer"
+
+// Styles
 import styles from '../styles/Home.module.css'
 import stylesGeneral from '../styles/Styles.module.css'
-
-import Footer from "../components/Footer"
 
 
 export default function Home() {
@@ -28,14 +30,14 @@ export default function Home() {
 
 
         <div className={styles.grid}>
-          <Link href="/numeros">
+          <Link href="/covid">
             <a className={styles.card}>
               <h2 className={styles.cardTitle}>Informações</h2>
               <p>Algumas informações importantes para ajudar na prevenção.</p>
             </a>
           </Link >
 
-          <Link href="/artigos">
+          <Link href="/articles">
             <a className={styles.card}>
               <h2 className={styles.cardTitle}>Artigos </h2>
               <p>Artigos criados por alunos da Rezende Rammel.</p>

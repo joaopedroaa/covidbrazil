@@ -1,6 +1,4 @@
-
 import useStats from '../utils/useStats';
-
 
 export default function DeathNumber({choice}) {
   const { stats: countries, loading, error } = useStats(

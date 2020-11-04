@@ -1,5 +1,5 @@
-import useStats from '../utils/useStats';
-import styles from '../styles/Covid.module.css'
+import useStats from '../../utils/useStats';
+import styles from './Stats.module.css'
 
 
 export default function Stats({ url }) {

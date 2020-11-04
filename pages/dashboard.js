@@ -1,12 +1,15 @@
 import Link from 'next/link'
 
+// Components
+import Footer from "../components/Footer"
+import BackMenu from "../components/BackMenu"
+import FormatSvg from "../components/FormatSvg"
+
+// Styles
 import styles from '../styles/Dashboard.module.css'
 import stylesHome from '../styles/Home.module.css'
 import stylesGeneral from '../styles/Styles.module.css'
 
-import Footer from "../components/Footer"
-import BackMenu from "../components/BackMenu"
-import FormatSvg from "../components/FormatSvg"
 
 
 export default function Dashboard() {
