@@ -31,9 +31,9 @@ export default function artigos() {
       <section className={styles.section}>
         <h2 className={styles.subtitle}>Brasil</h2>
         <Stats url="https://covid19.mathdro.id/api/countries/BRA" />
+        <StatsBrazil />
       </section>
 
-      <StatsBrazil />
 
       {/* <section className={styles.section}>
       </section> */}

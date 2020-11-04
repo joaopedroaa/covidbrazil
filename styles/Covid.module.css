@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.section{
+.section {
   padding: 100px 0;
 }
 
@@ -21,7 +21,7 @@
   margin-top: 3rem;
 }
 
-.subtitle{
+.subtitle {
   font-size: 1.8rem;
   text-align: center;
 }
@@ -50,7 +50,6 @@
   margin: 18px 60px;
 }
 
-
 /* @media (max-width: 870px) {
 
   .statsGrid {
@@ -69,33 +68,29 @@
   color: #404040;
 }
 
-.statsBlock .recoveveredCasesColor{
-  color: #00A600;
+.statsBlock .recoveveredCasesColor {
+  color: #00a600;
 }
-
-
 
 /* ------ */
 
-.covidMap{
+.covidMap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.covidMap h2{
+.covidMap h2 {
   margin-bottom: 7px;
 }
-.covidMap p{
+.covidMap p {
   margin: 0;
   color: #404040;
   font-size: 0.8rem;
 }
 
-
-.covidMap .covidMapImg{
+.covidMap .covidMapImg {
   margin-top: 40px;
-
 
   width: 100%;
   height: auto;
@@ -106,6 +101,6 @@
   border-radius: 20px;
 }
 
-.covidMap .covidMapImgDescription{
+.covidMap .covidMapImgDescription {
   margin-left: auto;
 }
