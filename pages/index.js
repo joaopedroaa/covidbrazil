@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+
+import { Article, Coronavirus, Dashboard, BackupTable } from '@styled-icons/material-sharp'
+
 // Components
 // const { default: next } = require("next");
 import Footer from "../components/Footer"
@@ -32,6 +35,7 @@ export default function Home() {
         <div className={styles.grid}>
           <Link href="/covid">
             <a className={styles.card}>
+              <p className={styles.icon}><Coronavirus  /></p>
               <h2 className={styles.cardTitle}>Informações</h2>
               <p>Algumas informações importantes para ajudar na prevenção.</p>
             </a>
@@ -39,6 +43,7 @@ export default function Home() {
 
           <Link href="/articles">
             <a className={styles.card}>
+              <p className={styles.icon}><Article  /></p>
               <h2 className={styles.cardTitle}>Artigos </h2>
               <p>Artigos criados por alunos da Rezende Rammel.</p>
             </a>
@@ -46,6 +51,7 @@ export default function Home() {
 
           <Link href="/news">
             <a className={styles.card}>
+              <p className={styles.icon}><BackupTable  /></p>
               <h2 className={styles.cardTitle}>Notícias </h2>
               <p>As últimas notícias para você ficar informado.</p>
             </a>
@@ -53,6 +59,7 @@ export default function Home() {
 
           <Link href="/dashboard">
             <a className={styles.card}>
+              <p className={styles.icon}><Dashboard  /></p>
               <h2 className={styles.cardTitle}>Dashboard </h2>
               <p>O dashboard da Johns Hopkins é o mais completo do mundo.</p>
             </a>
