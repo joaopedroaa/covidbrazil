@@ -23,6 +23,7 @@ export default function News() {
   // const { stats: news, loading, error } = useStats(newsapilink);
   // if (loading) return <p className={styles.container}> <img src="https://assets.materialup.com/uploads/e21b405b-4e2a-48dc-9181-625a37c1eae8/preview.gif" alt="" srcset="" /></p>;
   // if (error) return <p className={styles.container}>Erro ao carregar notícias</p>;
+  // console.log(newsapilink)
 
   return (
     <div className={stylesGeneral.container}>

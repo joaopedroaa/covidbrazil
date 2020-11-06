@@ -283,7 +283,20 @@ const news = {
       "urlToImage": "https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2020/10/eli-lilly-Darron-Cummings-AP-1000x563.jpg",
       "publishedAt": "2020-10-14T11:11:22Z",
       "content": "A empresa farmacêutica Eli Lilly é a mais recente companhia a interromper temporariamente um de seus ensaios clínicos relacionados ao COVID-19. O ensaio de Fase III envolvendo um tratamento experimen… [+2450 chars]"
-    }
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Uol.com.br"
+      },
+      "author": "Jody Serrano",
+      "title": "Novo emoji de máscara facial da Apple agora sorri",
+      "description": "Em versão beta do iOS 14.2, a Apple atualizou o emoji de máscara facial que em vez de expressão triste, agora se mostra feliz.\nThe post Novo emoji de máscara facial da Apple agora sorri appeared first on Gizmodo Brasil.",
+      "url": "https://gizmodo.uol.com.br/?p=362986",
+      "urlToImage": "https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2020/10/mascara-facial-sorrindo-ios14beta.jpg",
+      "publishedAt": "2020-10-05T11:49:57Z",
+      "content": "Neste ponto da pandemia do coronavírus, todos nós sabemos que as máscaras que as autoridades de saúde públicaconcordam ser uma de nossas armas mais poderosas contra o vírus podem, infelizmente, ser c… [+2524 chars]"
+    },
   ]
 }
 
