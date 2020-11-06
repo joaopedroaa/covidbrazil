@@ -9,7 +9,7 @@ export default [
   },
   {
     image: "024-mask",
-    name: "Gotículas"
+    name: "Gotículas de saliva"
   },
   {
     image: "004-cough",

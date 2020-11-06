@@ -27,7 +27,7 @@ export default function Home() {
           covid<span>brazil</span>
         </h1>
 
-        <p className={styles.description}>
+        <p className={stylesGeneral.description}>
           Uma plataforma, que recebe, em tempo real, dados sobre casos epidemiológicos, com o número de casos, mortes, recuperações, e informações novas sobre a doença. Com o objetivo de previnir o usuário.
         </p>
 

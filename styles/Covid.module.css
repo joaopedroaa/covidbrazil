@@ -30,7 +30,8 @@
 
 .description {
   font-size: 1rem;
-  margin-top: 4px;
+  margin: 4px 5px 0;
+  text-align: center;
 }
 
 /* Covid Map */
