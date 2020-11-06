@@ -35,17 +35,32 @@ export default function artigos() {
       {/* <section className={styles.section}>
       </section> */}
 
-      <section className={styles.section + " " + styles.covidMap}>
+      <section className={styles.section + " " + styles.sectionCovidMap}>
         <h2 className={styles.subtitle}>Mais de <DeathNumber />  pessoas morreram ao redor do mundo</h2>
         <p>Dados atualizados dia <DeathNumber choice="lastUpdate" /> UTC+0 horas. </p>
         {/* <img className={styles.covidMapImg} src="/image/microsoft-map.png" alt="" srcset="" />  */}
         <iframe src="https://public.domo.com/cards/dG1jy" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
       </section>
 
+      <section className={styles.section + " " + styles.sectionSymptoms}>
+        <h2 className={styles.subtitle}>Sintomas</h2>
+        <div className={styles.gridSymptoms}>
+          <p>Febre</p>
+          <p>Falta de ar</p>
+          <p>Tosse</p>
+          <p>Dor de garganta</p>
+          <p>Dor de cabeça</p>
+          <p>Cansaço</p>
+        </div>
+        <img src="/image/sintomas_corona.png" alt=""/>
+      </section>
+
+
+
+
+
+
       <Footer />
-
-
-
 
     </div >
 

@@ -15,9 +15,6 @@
   padding: 100px 0;
 }
 
-.backMenu {
-  font-size: 1rem;
-}
 
 .title {
   font-size: 2.7rem;
@@ -30,22 +27,24 @@
   text-align: center;
 }
 
-.covidMap {
+/* Covid Map */
+
+.sectionCovidMap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.covidMap h2 {
+.sectionCovidMap h2 {
   margin-bottom: 7px;
 }
-.covidMap p {
+.sectionCovidMap p {
   margin: 0;
   color: #404040;
   font-size: 0.8rem;
 }
 
-.covidMap .covidMapImg {
+.sectionCovidMap .covidMapImg {
   margin-top: 40px;
 
   width: 100%;
@@ -59,4 +58,39 @@
 
 .covidMap .covidMapImgDescription {
   margin-left: auto;
+}
+
+
+/* Symptoms */
+
+.sectionSymptoms{
+
+}
+
+.sectionSymptoms .gridSymptoms{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sectionSymptoms .gridSymptoms p{
+  background-color: #D6EDCE;
+
+  padding: 10px 20px;
+  margin: 10px;
+
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.sectionSymptoms img{
+
+  object-fit: cover;
+
+  width: 100%;
+  height: auto;
+
+  max-width: 1000px;
+  margin-top: 40px;
 }
