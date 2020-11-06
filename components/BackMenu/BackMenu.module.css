@@ -1,4 +1,48 @@
-.backMenu {
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100px;
+
+  margin-bottom: 70px;
+
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 124px;
+  height: 100%;
+
+  transition: 0.1s;
   font-size: 1rem;
-  text-align: center;
+}
+
+.header a:hover {
+  background-color:#999999;
+  color: white;
+}
+
+
+@media (max-width: 510px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header a {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+
+    padding: 20px ;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+  }
 }

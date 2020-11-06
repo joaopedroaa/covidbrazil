@@ -26,12 +26,9 @@ export default function News() {
 
   return (
     <div className={stylesGeneral.container}>
-      <Head>
-        <title>Covid Brazil / Notícias</title>
-        <link rel="icon" href="/icons/android-chrome-192x192.png" />
-      </Head>
-
+      <Head> <title>Covid Brazil / Notícias</title></Head>
       <BackMenu />
+
       <FormatSvg src="newspaper" />
 
       <h1 className={stylesGeneral.title}>Últimas notícias</h1>

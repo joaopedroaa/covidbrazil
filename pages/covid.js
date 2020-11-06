@@ -17,12 +17,9 @@ export default function artigos() {
   return (
 
     <div className={stylesGeneral.container}>
-      <Head>
-        <title>Covid Brazil / Informações</title>
-        <link rel="icon" href="/icons/android-chrome-192x192.png" />
-      </Head>
-
+      <Head> <title>Covid Brazil / Informações</title> </Head>
       <BackMenu />
+
 
       <FormatSvg src="empty_street" />
       <h1 className={stylesGeneral.title}>Informações</h1>
