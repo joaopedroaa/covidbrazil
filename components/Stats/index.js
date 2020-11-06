@@ -15,12 +15,12 @@ export default function Stats({ url }) {
   return (
     <div className={styles.statsGrid}>
       <div className={styles.statsBlock}>
-        <h3>{confirmed}</h3>
+        <h3 className={styles.confirmedCasesColor}>{confirmed}</h3>
         <span>Casos confirmados</span>
       </div>
 
       <div className={styles.statsBlock}>
-        <h3>{death}</h3>
+        <h3 className={styles.deathCasesColor}>{death}</h3>
         <span>Mortes</span>
       </div>
 

@@ -24,7 +24,6 @@
 
 .statsGridContainer {
   margin: 40px 10px 0;
-
 }
 
 .statsGridContainer:hover .statsGrid {
@@ -44,16 +43,12 @@
 .statsBlock h3 {
   margin: 0 0 10px 0;
   font-size: 1.6rem;
-  color: #eb4559;
+  color: #fe5552;
 }
 
 .statsBlock span {
   font-size: 1rem;
   color: #404040;
-}
-
-.statsBlock .recoveveredCasesColor {
-  color: #00a600;
 }
 
 .title {
