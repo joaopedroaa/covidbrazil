@@ -1,9 +1,5 @@
-import Head from 'next/head'
-
 // Components
-import Footer from "../components/Footer"
-import BackMenu from "../components/BackMenu"
-import FormatSvg from "../components/FormatSvg"
+import Layout from "../components/Layout"
 
 // Styles
 import styles from '../styles/Articles.module.css'
@@ -35,16 +31,9 @@ const articles = [
 
 export default function artigos() {
 
-
   return (
-    <div className={stylesGeneral.container}>
-      <Head> <title>Covid Brazil / Artigos</title></Head>
-      <BackMenu />
-
-      <FormatSvg src="articles" />
+    <Layout name="/ Artigos" svg="articles" footer="on">
       <h1 className={stylesGeneral.title}>Artigos</h1>
-
-
 
       <ul className={styles.unorderedList}>
         {articles.map((article, code) => {
@@ -65,7 +54,6 @@ export default function artigos() {
         })}
       </ul>
 
-      <Footer />
-    </div>
+    </Layout>
   )
 }

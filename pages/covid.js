@@ -1,13 +1,8 @@
-import Head from 'next/head'
-
-
 // Components
 import Stats from '../components/Stats'
+import Layout from "../components/Layout"
 import StatsBrazil from "../components/StatsBrazil"
-import Footer from "../components/Footer"
-import BackMenu from "../components/BackMenu"
 import DeathNumber from "../components/DeathNumber"
-import FormatSvg from "../components/FormatSvg"
 
 // Utils
 import transmissionData from "../utils/cards/transmission";
@@ -22,12 +17,8 @@ import stylesGeneral from '../styles/Styles.module.css'
 export default function artigos() {
 
   return (
+    <Layout name="/ Informações" svg="empty_street" >
 
-    <div className={stylesGeneral.container}>
-      <Head> <title>Covid Brazil / Informações</title> </Head>
-      <BackMenu />
-
-      <FormatSvg src="empty_street" />
       <h1 className={stylesGeneral.title}>Informações</h1>
       <p className={stylesGeneral.description}>Coronavírus é uma família de vírus que causam infecções respiratórias. O novo agente do coronavírus foi descoberto em 31/12/19 após casos registrados na China. Provoca a doença chamada de coronavírus (COVID-19).</p>
 
@@ -40,7 +31,7 @@ export default function artigos() {
       <section className={styles.section + " " + styles.sectionCovidMap}>
         <h2 className={styles.subtitle}>Mais de <DeathNumber />  pessoas morreram ao redor do mundo</h2>
         <p>Dados atualizados dia <DeathNumber choice="lastUpdate" /> UTC+0 horas. </p>
-        {/* <img className={styles.covidMapImg} src="/image/microsoft-map.png" alt="" srcset="" />  */}
+        {/* <img className={styles.covidMapImg} src="/image/microsoft-map.png" alt="" srcSet="" />  */}
         <iframe src="https://public.domo.com/cards/dG1jy" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
       </section>
 
@@ -76,8 +67,7 @@ export default function artigos() {
         </div>
       </section>
 
-      <Footer />
-    </div >
+    </Layout >
   )
 
 

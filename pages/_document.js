@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-const APP_NAME = 'Covid Brasil'
-const APP_DESCRIPTION = 'Uma plataforma, que recebe, em tempo real, dados sobre casos epidemiológicos'
+
+import siteConfig from '../data/config.json'
 
 export default class extends Document {
   static async getInitialProps(ctx) {
@@ -12,19 +12,18 @@ export default class extends Document {
     return (
       <Html lang='pt-br' dir='ltr'>
         <Head>
-          <meta name='application-name' content={APP_NAME} />
+          <meta name='application-name' content={siteConfig.APP_NAME} />
           <meta name='apple-mobile-web-app-capable' content='yes' />
           <meta name='apple-mobile-web-app-status-bar-style' content='default' />
-          <meta name='apple-mobile-web-app-title' content={APP_NAME} />
-          <meta name='description' content={APP_DESCRIPTION} />
+          <meta name='apple-mobile-web-app-title' content={siteConfig.APP_NAME} />
+          <meta name='description' content={siteConfig.APP_DESCRIPTION} />
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
-          <meta name='theme-color' content='#FFFFFF' />
+          <meta name='theme-color' content={siteConfig.THEME_COLOR} />
 
           {/* Icons */}
           <link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png' />
           <link rel='shortcut icon' href='/icons/android-chrome-192x192.png' />
-          <link rel="icon" href="/icons/android-chrome-192x192.png" />
           <link rel='manifest' href='/manifest.json' />
 
           {/* Stylesheet */}
