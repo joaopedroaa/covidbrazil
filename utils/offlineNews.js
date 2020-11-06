@@ -216,16 +216,6 @@ const news = {
     },
     {
       "source": { "id": null, "name": "Uol.com.br" },
-      "author": "Ed Cara",
-      "title": "Voluntário que supostamente havia recebido placebo em teste de vacina morre de COVID-19 no Brasil",
-      "description": "Um jovem de 28 anos que morava no Brasil e participava de um ensaio da vacina contra COVID-19 conduzido pela AstraZeneca e a Universidade de Oxford morreu de complicações relacionadas ao coronavírus. As autoridades de saúde e os responsáveis ​​pelo estudo não…",
-      "url": "https://gizmodo.uol.com.br/?p=364624",
-      "urlToImage": "https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2020/05/GettyImages-1208191884-1000x633.jpg",
-      "publishedAt": "2020-10-21T22:37:54Z",
-      "content": "Um jovem de 28 anos que morava no Brasil e participava de um ensaio da vacina contra COVID-19 conduzido pela AstraZeneca e a Universidade de Oxford morreu de complicações relacionadas ao coronavírus.… [+3188 chars]"
-    },
-    {
-      "source": { "id": null, "name": "Uol.com.br" },
       "author": "Jody Serrano",
       "title": "Este cachorro está aprendendo a detectar COVID-19",
       "description": "Pesquisadores na Austrália estão treinando cachorros para tentar detectar COVID-19, mas ainda são necessários mais testes.\nThe post Este cachorro está aprendendo a detectar COVID-19 appeared first on Gizmodo Brasil.",
