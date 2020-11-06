@@ -12,6 +12,32 @@ import FormatSvg from "../components/FormatSvg"
 import styles from '../styles/Covid.module.css'
 import stylesGeneral from '../styles/Styles.module.css'
 
+import { Article, Coronavirus, Dashboard, BackupTable } from '@styled-icons/material-sharp'
+
+const transmissionData = [
+  {
+    image: "026-pandemic",
+    name: "Contato pessoal"
+  },
+  {
+    image: "019-sneeze",
+    name: "Espirro"
+  },
+  {
+    image: "024-mask",
+    name: "Gotículas"
+  },
+  {
+    image: "004-cough",
+    name: "Tosse"
+  },
+  {
+    image: "029-washing",
+    name: "Objetos contaminados "
+  },
+]
+
+
 
 export default function artigos() {
   return (
@@ -23,10 +49,11 @@ export default function artigos() {
 
       <FormatSvg src="empty_street" />
       <h1 className={stylesGeneral.title}>Informações</h1>
+      <p className={stylesGeneral.description}>Coronavírus é uma família de vírus que causam infecções respiratórias. O novo agente do coronavírus foi descoberto em 31/12/19 após casos registrados na China. Provoca a doença chamada de coronavírus (COVID-19).</p>
 
 
       <section className={styles.section}>
-        <h2 className={styles.subtitle}>Brasil</h2>
+        <h2 className={styles.subtitle}>Casos no Brasil</h2>
         <Stats url="https://covid19.mathdro.id/api/countries/BRA" />
         <StatsBrazil />
       </section>
@@ -52,7 +79,34 @@ export default function artigos() {
           <p>Dor de cabeça</p>
           <p>Cansaço</p>
         </div>
-        <img src="/image/sintomas_corona.png" alt=""/>
+        <img src="/image/sintomas_corona.png" alt="" />
+      </section>
+
+
+      <section className={styles.section + " " + styles.sectionTransmission}>
+        <h2 className={styles.subtitle}>Transmissão</h2>
+        <p className={styles.description}>A transmissão acontece de uma pessoa doente para outra ou por contato próximo por meio de:</p>
+
+        {/* <div>Icons made by <a href="https://www.flaticon.com/authors/pixelmeetup" title="Pixelmeetup">Pixelmeetup</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */}
+
+        <div className={styles.gridTransmission}>
+          {transmissionData.map((cardData) => {
+            return (
+              <div className={styles.cardTransmission}>
+                <img src={`/svg/virus-spread/${cardData.image}.svg`}
+                  alt={cardData.name}
+                  title="Icon designed by Pixelmeetup from Flaticon"
+                />
+                <p>{cardData.name}</p>
+              </div>
+            )
+          })}
+
+
+
+
+        </div>
+        {/* <img src="/image/sintomas_corona.png" alt="" /> */}
       </section>
 
 

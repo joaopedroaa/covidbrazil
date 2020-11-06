@@ -24,16 +24,8 @@
   font-size: 3.7rem;
 }
 
-.title,
-.description {
+.title {
   text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.4rem;
-  max-width: 1200px;
-  padding: 0 10px;
 }
 
 .code {
@@ -116,7 +108,7 @@
 .card:active .icon svg {
   background-color: white;
   color: #00a600;
-  border: 3px solid  #00a600;
+  border: 3px solid #00a600;
 }
 
 .icon svg {
@@ -126,7 +118,7 @@
   height: 60px;
   padding: 7px;
   margin-bottom: 10px;
-  border: 3px solid  transparent;
+  border: 3px solid transparent;
   transition: color 0.2s ease;
 }
 

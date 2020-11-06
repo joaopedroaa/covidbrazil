@@ -15,7 +15,6 @@
   padding: 100px 0;
 }
 
-
 .title {
   font-size: 2.7rem;
   text-align: center;
@@ -25,6 +24,13 @@
 .subtitle {
   font-size: 1.8rem;
   text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.description {
+  font-size: 1rem;
+  margin-top: 4px;
 }
 
 /* Covid Map */
@@ -60,22 +66,20 @@
   margin-left: auto;
 }
 
-
 /* Symptoms */
 
-.sectionSymptoms{
-
+.sectionSymptoms {
 }
 
-.sectionSymptoms .gridSymptoms{
+.sectionSymptoms .gridSymptoms {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.sectionSymptoms .gridSymptoms p{
-  background-color: #D6EDCE;
+.sectionSymptoms .gridSymptoms p {
+  background-color: #d6edce;
 
   padding: 10px 20px;
   margin: 10px;
@@ -84,8 +88,76 @@
   font-weight: bold;
 }
 
-.sectionSymptoms img{
+.sectionSymptoms img {
+  object-fit: cover;
 
+  width: 100%;
+  height: auto;
+
+  max-width: 1000px;
+  margin-top: 40px;
+}
+
+/*  */
+
+.sectionTransmission {
+  max-width: 1200px;
+  width: 100%;
+  /* background-color: red; */
+}
+.sectionTransmission h2 {
+  margin-bottom: 7px;
+
+}
+.sectionTransmission h2 {
+  margin-bottom: 7px;
+
+}
+
+.sectionTransmission .gridTransmission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  /* background-color: #404040; */
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+.sectionTransmission .gridTransmission .cardTransmission {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 200px;
+  width: 100%;
+  height: 160px;
+
+  margin: 10px;
+  padding: 18px 20px;
+
+  background-color: #d6edce;
+  text-align: center;
+
+  border-radius: 5px;
+}
+
+.sectionTransmission .gridTransmission img {
+  width: 70px;
+  margin: 0;
+}
+
+.sectionTransmission .gridTransmission p {
+  margin: 10px;
+
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.sectionTransmission img {
   object-fit: cover;
 
   width: 100%;
