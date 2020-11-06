@@ -10,21 +10,14 @@ import DeathNumber from "../components/DeathNumber"
 import FormatSvg from "../components/FormatSvg"
 
 // Utils
-import transmissionData from "../utils/transmissionCards";
+import transmissionData from "../utils/cards/transmission";
+import symptomsCards from "../utils/cards/symptoms"
 
 // Styles
 import styles from '../styles/Covid.module.css'
 import stylesGeneral from '../styles/Styles.module.css'
 
 
-const symptomsCards = [
-  "Febre",
-  "Falta de ar",
-  "Tosse",
-  "Dor de garganta",
-  "Dor de cabeça",
-  "Cansaço"
-]
 
 export default function artigos() {
 
