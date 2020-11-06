@@ -20,10 +20,17 @@ export default class extends Document {
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
           <meta name='theme-color' content='#FFFFFF' />
-          {/* TIP: set viewport head meta tag in _app.js, otherwise it will show a warning */}
+
+          {/* Icons */}
           <link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png' />
           <link rel='shortcut icon' href='/icons/android-chrome-192x192.png' />
+          <link rel="icon" href="/icons/android-chrome-192x192.png" />
           <link rel='manifest' href='/manifest.json' />
+
+          {/* Stylesheet */}
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
           <style>{
             `
             html, body, #__next {
@@ -38,10 +45,16 @@ export default class extends Document {
             `
           }</style>
         </Head>
+
         <body>
           <Main />
           <NextScript />
         </body>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
       </Html>
     )
   }

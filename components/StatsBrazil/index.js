@@ -3,7 +3,7 @@ import useStats from '../../utils/useStats';
 import styles from './StatsBrazil.module.css'
 
 
-export default function Stats() {
+export default function Stats({dataAos}) {
   const { stats, loading, error } = useStats("https://covid19-brazil-api.now.sh/api/report/v1");
 
   if (loading) return <p>Carregando cidades do Brasil...</p>;
@@ -18,7 +18,7 @@ export default function Stats() {
         const recovered = cities.refuses.toLocaleString(undefined, { minimumFractionDigits: 0 });;
 
         return (
-          <div className={styles.statsGridContainer} key={cities.uid}>
+          <div data-aos={dataAos} className={styles.statsGridContainer} key={cities.uid}>
             <h2 className={styles.title}>{cities.state} ({cities.uf})</h2>
 
             <div className={styles.statsGrid}>

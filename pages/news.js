@@ -42,6 +42,7 @@ export default function News() {
             target="_blank"
             key={code}
             rel="noopener noreferrer"
+            data-aos="fade-up"
           >
             <div className={styles.card}>
               <img src={news.urlToImage} alt="" srcSet="" />
