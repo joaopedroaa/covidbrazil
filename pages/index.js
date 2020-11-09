@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-
 import { Article, Coronavirus, Dashboard, BackupTable } from '@styled-icons/material-sharp'
 
 // Components
@@ -12,7 +11,6 @@ import Layout from "../components/Layout"
 // Styles
 import styles from '../styles/Home.module.css'
 import stylesGeneral from '../styles/Styles.module.css'
-
 
 
 export default function Home() {
