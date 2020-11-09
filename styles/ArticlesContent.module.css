@@ -1,0 +1,88 @@
+/* Image ===================== */
+
+.sectionImg {
+}
+.sectionImg p {
+  /* padding-left: 30px; */
+  text-align: center;
+  margin: 0;
+}
+
+.sectionImg .img {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  margin: 1.9rem 0;
+}
+
+/* Title ===================== */
+
+.sectionTitle {
+  text-align: left;
+  margin: 0 20px;
+  max-width: 680px;
+  width: 100%;
+  border-bottom: 1px solid rgb(51, 51, 51);
+  color: rgba(41, 41, 41, 1);
+}
+
+.sectionTitle .title {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.sectionTitle .subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.sectionTitle .author {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.sectionTitle .date {
+  text-align: left;
+  font-size: 1rem;
+}
+
+@media (max-width: 420px) {
+  .sectionTitle .subtitle {
+    flex-direction: column;
+  }
+  .sectionTitle .author {
+    /* margin-top: 0; */
+    font-size: 1.2rem;
+  }
+  .sectionTitle .date {
+    margin-top: 0;
+    /* color: rgba(41, 41, 41, 0.7); */
+    font-size: 0.8rem;
+  }
+}
+
+/* Content ===================== */
+
+.sectionContent {
+  max-width: 680px;
+  color: rgba(41, 41, 41, 1);
+
+  word-break: break-word;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  letter-spacing: -0.003em;
+  margin-bottom: -0.46em;
+}
+
+.sectionContent p {
+  margin-top: 1.56em;
+}
+
+/* MISC ===================== */
+
+.sectionTitle,
+.sectionContent {
+  padding: 0 30px;
+}

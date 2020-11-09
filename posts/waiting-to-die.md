@@ -2,7 +2,8 @@
 title: The hidden paradise
 author: Father John Misty
 date: '05 de novembro de 2020'
-hero_image: ../articles/02-small.jpg
+hero_image: ../articles/medium-02.jpg
+hero_image_author: Dan Burton via Unsplash
 ---
 
 Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, [bibendum](http://google.com) eu pulvinar vel, sodales vitae dui.

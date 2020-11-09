@@ -3,7 +3,13 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 const glob = require('glob')
 
+// Components
 import Layout from '../../components/Layout'
+
+// Styles
+import styles from '../../styles/ArticlesContent.module.css'
+import stylesGeneral from '../../styles/Styles.module.css'
+
 
 export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
   function reformatDate(fullDate) {
@@ -15,25 +21,32 @@ export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
 
   return (
     <Layout siteTitle={siteTitle}>
-      <article className={"none"}>
+      <article className={stylesGeneral.container + " " + styles.container}>
 
-        <figure className={"none"}>
+        <div className={styles.sectionTitle}>
+          <h1 className={styles.title}>{frontmatter.title}</h1>
+
+          <div className={styles.subtitle}>
+            <h3 className={styles.author}>Por {frontmatter.author}</h3>
+            <h4 className={styles.date}>{frontmatter.date}</h4>
+          </div>
+        </div>
+
+        <span className={styles.sectionImg}>
           <img
+            className={styles.img}
             src={frontmatter.hero_image}
             alt={frontmatter.title}
           />
-        </figure>
+          <p>Foto: {frontmatter.hero_image_author}</p>
+        </span>
 
-        <div className={"none"}>
-          <h1>{frontmatter.title}</h1>
-          <h3>{reformatDate(frontmatter.date)}</h3>
-        </div>
 
-        <div className={"none"}>
+        <div className={styles.sectionContent}>
           <ReactMarkdown source={markdownBody} />
         </div>
 
-        <h2 className={"none"}>Written By: {frontmatter.author}</h2>
+        {/* <h2 className={styles.author}>Written By: {frontmatter.author}</h2> */}
       </article>
 
     </Layout>
