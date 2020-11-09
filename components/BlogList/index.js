@@ -26,8 +26,8 @@ const BlogList = ({ allBlogs }) => {
     <ul className={styles.unorderedList}>
       {allBlogs.length > 1 && allBlogs.map((article, code) => {
         return (
-          <Link key={article.slug} href={{ pathname: `/articles/${article.slug}` }}>
-            <li className={styles.list}>
+          <Link  key={article.slug} href={{ pathname: `/articles/${article.slug}` }}>
+            <li data-aos="zoom-in-up" className={styles.list}>
 
               <div className={styles.image}>
                 <img
