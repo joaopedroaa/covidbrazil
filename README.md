@@ -4,24 +4,9 @@
 
 Uma plataforma, que recebe, em tempo real, dados sobre casos epidemiológicos, tem o número de casos, mortes, recuperações, e informações novas sobre a doença. Com o objetivo de previnir o usuário.
 
+- [PWA screenshots](https://github.com/joaopedroaats/covidbrazil/blob/master/README-SHOTS.md)
 
----
-
-## Android
-<img src="./.github/image/android.jpeg" height="400px"/>
-
-## Linux
-<img src="./.github/image/linux.png" height="400px" width="540px"/>
-
-## Windows
-<img src="./.github/image/windows.png" height="400px" width="540px"/>
-
-
-
-
-
-
-## APIs
+## APIs usadas
 
 Mundo
 https://covid19.mathdro.id/api
