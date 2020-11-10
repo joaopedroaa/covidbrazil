@@ -20,7 +20,7 @@ export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
   if (!frontmatter) return <></>
 
   return (
-    <Layout siteTitle={siteTitle}>
+    <Layout name={"/ " + frontmatter.title} siteTitle={siteTitle}>
       <article className={stylesGeneral.container + " " + styles.container}>
 
         <div className={styles.sectionTitle}>
