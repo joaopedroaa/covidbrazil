@@ -2,13 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-direction: column;
   width: 100%;
   height: 100px;
 
   margin-bottom: 70px;
-
   border-bottom: 1px solid #eaeaea;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.controlNavCheckbox {
+  display: none;
 }
 
 .header a {
@@ -24,24 +36,98 @@
 }
 
 .header a:hover {
-  background-color:#999999;
+  background-color: #999999;
   color: white;
 }
 
+.controlNavCheckbox:checked ~ .controlNavClose {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
 
-@media (max-width: 510px) {
+.controlNavCheckbox:checked ~ nav {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  /* background-color: red; */
+}
+
+@media screen and (max-width: 767px) {
   .header {
-    flex-direction: column;
     height: auto;
+  }
+
+  .header .controlNav {
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    display: block;
+    width: 30px;
+    padding: 5px 0;
+
+    border: solid #333;
+    border-width: 3px 0;
+
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .header .controlNav:before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #333;
+  }
+
+  .header .controlNavClose {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    z-index: 1;
+
+    background: rgba(0, 0, 0, 0.1);
+    /* transition: all 300ms linear; */
+
+    transform: translate(100%, 0);
+  }
+
+  .header nav {
+    flex-direction: column;
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 200px;
+    border-left: 1px solid #ccc;
+    background: #fff;
+
+    overflow-x: auto;
+    z-index: 2;
+
+    transition: all 500ms ease;
+    transform: translate(100%, 0);
   }
 
   .header a {
     flex-direction: column;
     align-items: flex-start;
-    justify-content: left;
+    justify-content: center;
+    border-bottom: 1px solid #eaeaea;
 
-    padding: 20px ;
     width: 100%;
+    height: 14%;
+
+    padding: 20px;
+
     text-align: left;
     font-size: 1rem;
   }
