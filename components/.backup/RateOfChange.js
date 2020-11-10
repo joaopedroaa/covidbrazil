@@ -23,7 +23,6 @@ function RateOfChange() {
     return <div>Loading ...</div>
   }
 
-  console.log(stats)
 
   return (
     <div style={{ textAlign: 'center' }}>
