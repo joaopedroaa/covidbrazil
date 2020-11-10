@@ -20,7 +20,6 @@ export default function artigos() {
     <Layout name="/ Informações" svg="empty_street" >
 
       <h1 className={stylesGeneral.title}>Informações</h1>
-      <h1 className={stylesGeneral.title}><DeathNumber choice="lastUpdate" /></h1>
       <p className={stylesGeneral.description}>Coronavírus é uma família de vírus que causam infecções respiratórias. O novo agente do coronavírus foi descoberto em 31/12/19 após casos registrados na China. Provoca a doença chamada de coronavírus (COVID-19).</p>
 
       <section className={styles.section}>
