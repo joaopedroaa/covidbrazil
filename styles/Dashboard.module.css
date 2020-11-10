@@ -1,17 +1,18 @@
-.button{
+.button {
   padding: 15px 60px;
   border: none;
   font-size: 1.2rem;
   border-radius: 30px;
-  background-color:#00a600;
   color: white;
 
   margin: 40px 0 80px 0;
+  /* background-color:; */
+  background-image: linear-gradient(to right, #0fd850 0%, #00e3ae 100%);
 }
 
+.button:hover {
+  transition: all 0.2s ease;
 
-.button:hover{
-
-  background-color:#006d00;
+  background-image: linear-gradient(to right, #0cac40 0%, #00b58b 100%);
   color: white;
 }

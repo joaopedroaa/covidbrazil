@@ -68,16 +68,35 @@
 .sectionContent {
   max-width: 680px;
   color: rgba(41, 41, 41, 1);
-
+  font-style: normal;
+  font-weight: 400;
   word-break: break-word;
-  line-height: 2rem;
-  font-size: 1.3rem;
-  letter-spacing: -0.003em;
-  margin-bottom: -0.46em;
 }
 
 .sectionContent p {
-  margin-top: 1.56em;
+  font-size: 21px;
+  line-height: 32px;
+
+  margin-top: 2em;
+  /* margin-bottom: -0.46em; */
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  letter-spacing: -0.003em;
+  box-sizing: inherit;
+
+
+
+}
+
+@media (max-width: 552px) {
+  .sectionContent p {
+    font-size: 18px;
+    line-height: 28px;
+
+    margin-top: 1.56em;
+  }
 }
 
 /* MISC ===================== */

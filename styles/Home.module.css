@@ -107,13 +107,17 @@
 .card:focus .icon svg,
 .card:active .icon svg {
   background-color: white;
-  color: #00a600;
-  border: 3px solid #00a600;
+  background-image: linear-gradient(to right, white 0%, white 100%);
+
+  color: #0fd850;
+
+  border: 3px solid #0fd850;
 }
 
 .icon svg {
   border-radius: 100%;
-  background-color: #00a600;
+  background-image: linear-gradient(to right, #0fd850 0%, #00e3ae 100%);
+
   color: white;
   height: 60px;
   padding: 7px;
