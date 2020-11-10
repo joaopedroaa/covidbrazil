@@ -20,6 +20,7 @@ export default function artigos() {
     <Layout name="/ Informações" svg="empty_street" >
 
       <h1 className={stylesGeneral.title}>Informações</h1>
+      <h1 className={stylesGeneral.title}><DeathNumber choice="lastUpdate" /></h1>
       <p className={stylesGeneral.description}>Coronavírus é uma família de vírus que causam infecções respiratórias. O novo agente do coronavírus foi descoberto em 31/12/19 após casos registrados na China. Provoca a doença chamada de coronavírus (COVID-19).</p>
 
       <section className={styles.section}>
@@ -30,7 +31,7 @@ export default function artigos() {
 
       <section className={styles.section + " " + styles.sectionCovidMap}>
         <h2 className={styles.subtitle}>Mais de <DeathNumber />  pessoas morreram ao redor do mundo</h2>
-        <p>Dados atualizados dia <DeathNumber choice="lastUpdate" /> UTC+0 horas. </p>
+        <p>Dados atualizados dia <DeathNumber choice="lastUpdate" /> horas. </p>
         {/* <img className={styles.covidMapImg} src="/image/microsoft-map.png" alt="" srcSet="" />  */}
         <iframe src="https://public.domo.com/cards/dG1jy" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
       </section>
