@@ -8,7 +8,7 @@
 }
 
 .title span {
-  color: #00a600;
+  color: #0cac40;
   text-decoration: none;
 }
 
@@ -70,8 +70,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #00a600;
-  border-color: #00a600;
+  color: #0cac40;
+  border-color: #0cac40;
 }
 
 .cardTitle {
