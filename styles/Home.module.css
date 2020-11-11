@@ -103,27 +103,26 @@
   line-height: 1.5;
 }
 
+.icon svg {
+  background: linear-gradient(to right, #0fd850 0%, #00e3ae 100%);
+  border-radius: 100%;
+
+  height: 60px;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+
+  color: white;
+  padding: 10px;
+}
+
 .card:hover .icon svg,
 .card:focus .icon svg,
 .card:active .icon svg {
-  background-color: white;
-  background-image: linear-gradient(to right, white 0%, white 100%);
+  background: white;
+  border: 3px solid #0fd850;
 
   color: #0fd850;
-
-  border: 3px solid #0fd850;
-}
-
-.icon svg {
-  border-radius: 100%;
-  background-image: linear-gradient(to right, #0fd850 0%, #00e3ae 100%);
-
-  color: white;
-  height: 60px;
   padding: 7px;
-  margin-bottom: 10px;
-  border: 3px solid transparent;
-  transition: color 0.2s ease;
 }
 
 @media (max-width: 810px) {
