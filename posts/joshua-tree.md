@@ -1,7 +1,7 @@
 ---
 title: An otherworldly desert
-author: Grace Hopper
-date: '05 de maio de 2020'
+author: Maria Eduarda
+date: '05 de novembro de 2020'
 hero_image: ../articles/medium-02.jpg
 hero_image_author: Dan Burton via Unsplash
 

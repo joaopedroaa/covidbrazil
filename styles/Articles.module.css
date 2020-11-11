@@ -66,43 +66,58 @@
   padding: 16px 10px;
 }
 
-.list .data p {
+.list .data .date {
   margin: 0;
   font-size: 0.9rem;
 }
 
-.list .data p span {
-  margin: 0 2px;
-}
 
-.list .data h2 {
+.list .data .title {
   margin: 0;
   margin-top: 10px;
   font-size: 2rem;
 }
 
-.list .data h3 {
+.list .data .description p {
   margin: 0;
   margin-top: 4px;
   font-weight: 400;
   line-height: 1.6rem;
+  font-size: 1.17rem;
 }
-.list .data h4 {
+.list .data .author {
   margin: 0;
   margin-top: 4px;
   font-weight: 400;
   text-align: right;
+  font-size: 1rem;
 }
 
 @media (max-width: 1200px) {
   .list {
     flex-direction: column;
     max-width: calc(640px / 1.7);
+    margin: 30px 20px;
   }
 
   .list img {
-    width: calc(640px / 1.7);
+    /* width: calc(640px / 1.7);
     height: calc(427px / 1.7);
-    border-radius: 0;
+    border-radius: 0; */
+    /* width: 200px; */
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .list .data .title {
+    font-size: 1.4rem;
+  }
+  .list .data .description p {
+    font-size: 1rem;
+  }
+  .list .data .author {
+    font-size: 0.9rem;
+
   }
 }

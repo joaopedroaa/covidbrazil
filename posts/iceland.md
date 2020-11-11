@@ -1,7 +1,7 @@
 ---
-title: A trip to Iceland A trip to Iceland A trip to Iceland
-author: "Watson & Crick"
-date: "05 de maio de 2020"
+title: A trip to Iceland A trip to Iceland A trip
+author: Ana Beatriz
+date: "05 de novembro de 2020"
 hero_image: ../articles/medium-01.jpg
 hero_image_author: Macau Photo Agency via Unsplash
 ---

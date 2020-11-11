@@ -1,6 +1,6 @@
 ---
 title: The hidden paradise
-author: Father John Misty
+author: Lucca
 date: '05 de novembro de 2020'
 hero_image: ../articles/medium-01.jpg
 hero_image_author: Macau Photo Agency via Unsplash
