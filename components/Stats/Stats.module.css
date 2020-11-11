@@ -37,7 +37,7 @@
 }
 
 .statsBlock .confirmedCasesColor {
-  color: #f37a00;
+  color: #fe5552;
 }
 
 .statsBlock .deathCasesColor {
@@ -45,5 +45,5 @@
 }
 
 .statsBlock .recoveveredCasesColor {
-  color: #00a600;
+  color: #0fd850;
 }

@@ -71,11 +71,14 @@
   font-size: 0.9rem;
 }
 
-
 .list .data .title {
   margin: 0;
   margin-top: 10px;
   font-size: 2rem;
+}
+
+.list .data .description {
+  margin: 0;
 }
 
 .list .data .description p {
@@ -83,11 +86,12 @@
   margin-top: 4px;
   font-weight: 400;
   line-height: 1.6rem;
-  font-size: 1.17rem;
+  font-size: 1rem;
 }
+
 .list .data .author {
   margin: 0;
-  margin-top: 4px;
+  margin-top: 10px;
   font-weight: 400;
   text-align: right;
   font-size: 1rem;
@@ -112,12 +116,5 @@
 
   .list .data .title {
     font-size: 1.4rem;
-  }
-  .list .data .description p {
-    font-size: 1rem;
-  }
-  .list .data .author {
-    font-size: 0.9rem;
-
   }
 }

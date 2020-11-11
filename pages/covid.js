@@ -32,7 +32,7 @@ export default function artigos() {
         <h2 className={styles.subtitle}>Mais de <DeathNumber />  pessoas morreram ao redor do mundo</h2>
         <p>Dados atualizados dia <DeathNumber choice="lastUpdate" /> horas. </p>
         {/* <img className={styles.covidMapImg} src="/image/microsoft-map.png" alt="" srcSet="" />  */}
-        <iframe src="https://public.domo.com/cards/dG1jy" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+        <iframe title="covid map" src="https://public.domo.com/cards/dG1jy" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
       </section>
 
       <section className={styles.section + " " + styles.sectionSymptoms}>

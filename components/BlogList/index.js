@@ -11,7 +11,7 @@ import stylesGeneral from '../../styles/Styles.module.css'
 
 const BlogList = ({ allBlogs }) => {
   function truncateSummary(content) {
-    return content.slice(0, 200).trimEnd()
+    return content.slice(0, 190).trimEnd() + "..."
   }
 
   function reformatDate(fullDate) {
@@ -26,7 +26,7 @@ const BlogList = ({ allBlogs }) => {
     <ul className={styles.unorderedList}>
       {allBlogs.length > 1 && allBlogs.map((article, code) => {
         return (
-          <Link  key={article.slug} href={{ pathname: `/articles/${article.slug}` }}>
+          <Link key={article.slug} href={{ pathname: `/articles/${article.slug}` }}>
             <li data-aos="zoom-in-up" className={styles.list}>
 
               <div className={styles.image}>
@@ -35,16 +35,18 @@ const BlogList = ({ allBlogs }) => {
                   alt={article.frontmatter.hero_image} />
               </div>
               <div className={styles.data}>
-                <p>{reformatDate(article.frontmatter.date)}</p>
-                <h2>{article.frontmatter.title}</h2>
+                <p className={styles.date}>{reformatDate(article.frontmatter.date)}</p>
+                <h2 className={styles.title}>{article.frontmatter.title}</h2>
 
-                <h3>
+                <h3 className={styles.description}>
                   <ReactMarkdown
                     source={truncateSummary(article.markdownBody)}
                   />
                 </h3>
 
-                <h4>{article.frontmatter.author}</h4>
+
+
+                <h4 className={styles.author}>{article.frontmatter.author}</h4>
               </div>
             </li>
           </Link>
