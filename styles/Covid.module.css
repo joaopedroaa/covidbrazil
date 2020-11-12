@@ -27,15 +27,16 @@
   margin-bottom: 10px;
 }
 
-.subtitle {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
 .description {
   font-size: 1.2rem;
   margin: 4px 0 0;
   padding: 0;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Introduction */
@@ -51,6 +52,7 @@
   flex-direction: column;
   justify-content: center;
 
+  text-align: center;
   max-width: 480px;
   margin-right: 20px;
 }
@@ -65,7 +67,6 @@
   }
 
   .introductionData .title,
-  .introductionData .subtitle,
   .introductionData .description {
     text-align: center;
   }

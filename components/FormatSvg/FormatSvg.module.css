@@ -2,3 +2,12 @@
   width: auto;
   height: 300px;
 }
+
+
+@media (max-width:720px){
+  .svgFormated {
+    width: 100%;
+    height: 300px;
+  }
+
+}
