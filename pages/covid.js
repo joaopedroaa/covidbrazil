@@ -67,6 +67,15 @@ export default function artigos() {
         </div>
       </section>
 
+
+      <section data-aos="fade-left" className={styles.section + " " + styles.sectionApi}>
+        <p>API disponível em <a
+          href="https://covidbrazil.now.sh/api/v1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >covidbrazil.now.sh/api/v1</a></p>
+      </section>
+
     </Layout >
   )
 
