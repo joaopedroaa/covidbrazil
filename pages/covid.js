@@ -12,16 +12,25 @@ import symptomsCards from '../utils/cards/symptoms';
 import styles from '../styles/Covid.module.css';
 import stylesGeneral from '../styles/Styles.module.css';
 
-export default function artigos() {
+import FormatSvg from '../components/FormatSvg';
+
+export default function covid() {
   return (
-    <Layout name="/ Informações" svg="empty_street">
-      <h1 className={stylesGeneral.title}>Informações</h1>
-      <p className={stylesGeneral.description}>
-        Coronavírus é uma família de vírus que causam infecções respiratórias. O
-        novo agente do coronavírus foi descoberto em 31/12/19 após casos
-        registrados na China. Provoca a doença chamada de coronavírus
-        (COVID-19).
-      </p>
+    <Layout name="/ Informações">
+      <div className={styles.introduction}>
+        <div className={styles.introductionData}>
+          <h1 className={`${stylesGeneral.title} ${styles.title}`}>
+            Coronavírus
+          </h1>
+          <p className={`${stylesGeneral.description} ${styles.description}`}>
+            Uma família de vírus que causam infecções respiratórias. O novo
+            agente do coronavírus foi descoberto em 2019 após casos registrados
+            na China. Provoca a doença chamada de coronavírus (COVID-19).
+          </p>
+        </div>
+
+        <FormatSvg src="social_distancing" />
+      </div>
 
       <section className={styles.section}>
         <h2 className={styles.subtitle}>Casos no Brasil</h2>

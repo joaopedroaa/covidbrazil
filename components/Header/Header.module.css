@@ -55,10 +55,13 @@
   /* background-color: red; */
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 720px) {
   .header {
     height: auto;
     position: fixed;
+    top: 6px;
+    right: 6px;
+    border: none;
   }
 
   .header .controlNav {
@@ -85,7 +88,6 @@
     display: block;
     height: 3px;
     background: #333;
-
   }
 
   .header .controlNavClose {

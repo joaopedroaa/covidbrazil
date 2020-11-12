@@ -14,8 +14,11 @@ export default function Layout(props) {
       </Head>
 
       {props.header === 'off' || <Header />}
-      {props.svg && <FormatSvg src={props.svg} />}
-      {props.children}
+
+      <div className={stylesGeneral.content}>
+        {props.svg && <FormatSvg src={props.svg} />}
+        {props.children}
+      </div>
       {props.footer === 'off' || <Footer />}
     </div>
   );
