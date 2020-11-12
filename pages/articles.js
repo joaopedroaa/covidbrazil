@@ -6,14 +6,7 @@ import BlogList from '../components/BlogList'
 import styles from '../styles/Articles.module.css'
 import stylesGeneral from '../styles/Styles.module.css'
 
-
 export async function getStaticProps() {
-  const siteConfig = {
-    "title": "Covid Brasil Title",
-    "description": "Uma plataforma",
-    "APP_NAME": "Covid Brasil",
-    "APP_DESCRIPTION": "Uma plataforma, que recebe, em tempo real, dados sobre casos epidemiológicos"
-  }
 
   //get posts & context from folder
   const posts = (context => {
@@ -42,9 +35,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      allBlogs: posts,
-      title: siteConfig.title,
-      description: siteConfig.description,
+      allBlogs: posts
     },
   }
 }
