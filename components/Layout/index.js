@@ -1,10 +1,10 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-import Footer from "../../components/Footer"
-import BackMenu from "../../components/BackMenu"
-import FormatSvg from "../../components/FormatSvg"
+import Footer from '../Footer';
+import BackMenu from '../BackMenu';
+import FormatSvg from '../FormatSvg';
 
-import stylesGeneral from '../../styles/Styles.module.css'
+import stylesGeneral from '../../styles/Styles.module.css';
 
 export default function Layout(props) {
   return (
@@ -13,10 +13,10 @@ export default function Layout(props) {
         <title>Covid Brazil {props.name}</title>
       </Head>
 
-      {props.header == "off" || <BackMenu />}
-      {props.svg && <FormatSvg src={props.svg}/>}
+      {props.header === 'off' || <BackMenu />}
+      {props.svg && <FormatSvg src={props.svg} />}
       {props.children}
-      {props.footer == "off" || <Footer />}
+      {props.footer === 'off' || <Footer />}
     </div>
-  )
+  );
 }

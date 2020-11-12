@@ -10,25 +10,25 @@ export default function useStats(url, rapidapiHost, rapidapiKey) {
       setLoading(true);
       setError();
 
-      const data = await fetch(url, rapidapiHost && {
-        "headers": {
-          "x-rapidapi-host": rapidapiHost,
-          "x-rapidapi-key": rapidapiKey
+      const data = await fetch(
+        url,
+        rapidapiHost && {
+          headers: {
+            'x-rapidapi-host': rapidapiHost,
+            'x-rapidapi-key': rapidapiKey,
+          },
         }
-      })
+      )
         .then(res => res.json())
         .catch(err => {
           setError(err);
         });
 
-
       setStats(data);
       setLoading(false);
-
     }
 
     fetchData();
-
   }, [url]);
 
   return {

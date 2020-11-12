@@ -1,4 +1,4 @@
-import styles from './Footer.module.css'
+import styles from './Footer.module.css';
 
 export default function footer() {
   return (
@@ -6,6 +6,5 @@ export default function footer() {
       <p>Rezende Rammel</p>
       <p>28° Mostra Tecnológica</p>
     </footer>
-
-  )
+  );
 }

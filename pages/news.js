@@ -1,18 +1,13 @@
-import Head from 'next/head'
-
 // Components
-import Layout from "../components/Layout"
+import Layout from '../components/Layout';
 
 // Utils
-import news from "../utils/offlineNews"
-import shuffle from "../utils/shuffle"
-import useStats from '../utils/useStats';
-
+import news from '../utils/offlineNews';
+import shuffle from '../utils/shuffle';
 
 // Styles
-import styles from '../styles/News.module.css'
-import stylesGeneral from '../styles/Styles.module.css'
-
+import styles from '../styles/News.module.css';
+import stylesGeneral from '../styles/Styles.module.css';
 
 // function enableApi() {
 //   const newsapilink = "https://newsapi.org/v2/everything?" +
@@ -28,35 +23,32 @@ import stylesGeneral from '../styles/Styles.module.css'
 //   return [news, newsapilink];
 // }
 
-
-
 export default function News() {
-
   return (
-    <Layout name="/ Notícias" svg="newspaper" >
+    <Layout name="/ Notícias" svg="newspaper">
       <h1 className={stylesGeneral.title}>Últimas notícias</h1>
 
       <p className={styles.description}>coronavírus</p>
 
       <div className={styles.grid}>
-        {shuffle(news.articles).map((news, code) => (
-          <a href={news.url}
+        {shuffle(news.articles).map((article, code) => (
+          <a
+            href={article.url}
             target="_blank"
             key={code}
             rel="noopener noreferrer"
             data-aos="fade-up"
           >
             <div className={styles.card}>
-              <img src={news.urlToImage} alt="" srcSet="" />
+              <img src={article.urlToImage} alt="" srcSet="" />
               <div className={styles.newsText}>
-                <p className={styles.newsTextTitle}> {news.title}</p>
-                <p className={styles.newsTextSource}> {news.author}</p>
+                <p className={styles.newsTextTitle}> {article.title}</p>
+                <p className={styles.newsTextSource}> {article.author}</p>
               </div>
             </div>
           </a>
-
         ))}
       </div>
-    </Layout >
+    </Layout>
   );
 }
