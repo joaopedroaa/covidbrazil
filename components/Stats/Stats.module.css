@@ -6,6 +6,7 @@
 
   padding: 0 20px;
   margin: 0 20px;
+
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
@@ -15,16 +16,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  margin: 18px 60px;
+  min-width: 250px;
+  margin: 18px 0;
+  /* margin: 18px 60px; */
 }
 
-/* @media (max-width: 870px) {
-
+@media (max-width: 360px) {
   .statsGrid {
-    flex-direction: column;
+    padding: 0;
   }
-} */
+}
 
 .statsBlock h3 {
   margin: 0 0 18px 0;
