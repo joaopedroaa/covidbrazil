@@ -15,22 +15,23 @@
   padding: 100px 0;
 }
 
-.title,
-.subtitle,
-.description {
-  text-align: left;
-}
-
 .title {
   font-size: 2.7rem;
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: left;
+}
+
+.titleDescription {
+  text-align: left;
+  padding: 0;
+  margin: 4px 0 0;
+  font-size: 1.2rem;
 }
 
 .description {
   font-size: 1.2rem;
-  margin: 4px 0 0;
-  padding: 0;
+  text-align: center;
 }
 
 .subtitle {
@@ -43,6 +44,9 @@
 
 .introduction {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
   max-width: 1340px;
   margin: 0 20px 0;
 }
@@ -54,6 +58,7 @@
 
   text-align: center;
   max-width: 480px;
+
   margin-right: 20px;
 }
 
@@ -63,11 +68,12 @@
   }
 
   .introductionData {
+    margin: 0;
     margin-bottom: 20px;
   }
 
   .introductionData .title,
-  .introductionData .description {
+  .introductionData .titleDescription {
     text-align: center;
   }
 }

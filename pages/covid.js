@@ -22,7 +22,9 @@ export default function covid() {
           <h1 className={`${stylesGeneral.title} ${styles.title}`}>
             Coronavírus
           </h1>
-          <p className={`${stylesGeneral.description} ${styles.description}`}>
+          <p
+            className={`${stylesGeneral.description} ${styles.titleDescription}`}
+          >
             Uma família de vírus que causam infecções respiratórias. O novo
             agente do coronavírus foi descoberto em 2019 após casos registrados
             na China. Provoca a doença chamada de coronavírus (COVID-19).
