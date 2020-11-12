@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import Footer from '../Footer';
-import BackMenu from '../BackMenu';
+import Header from '../Header';
 import FormatSvg from '../FormatSvg';
 
 import stylesGeneral from '../../styles/Styles.module.css';
@@ -13,7 +13,7 @@ export default function Layout(props) {
         <title>Covid Brazil {props.name}</title>
       </Head>
 
-      {props.header === 'off' || <BackMenu />}
+      {props.header === 'off' || <Header />}
       {props.svg && <FormatSvg src={props.svg} />}
       {props.children}
       {props.footer === 'off' || <Footer />}

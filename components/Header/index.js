@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import Link from 'next/link';
-import styles from './BackMenu.module.css';
+import styles from './Header.module.css';
 
-export default function backMenu() {
+export default function Header() {
   return (
     <header className={styles.header}>
       <input
