@@ -12,7 +12,7 @@ import symptomsCards from '../utils/cards/symptoms';
 import styles from '../styles/Covid.module.css';
 import stylesGeneral from '../styles/Styles.module.css';
 
-import FormatSvg from '../components/FormatSvg';
+// import FormatSvg from '../components/FormatSvg';
 
 export default function covid() {
   return (
@@ -30,8 +30,12 @@ export default function covid() {
             na China. Provoca a doença chamada de coronavírus (COVID-19).
           </p>
         </div>
-
-        <FormatSvg src="social_distancing" />
+        <img
+          className={styles.svgFormated}
+          src="/svg/social_distancing.svg"
+          alt={styles.svgFormated}
+        />
+        {/* <FormatSvg src="social_distancing" /> */}
       </div>
 
       <section className={styles.section}>
