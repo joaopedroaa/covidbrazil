@@ -2,26 +2,12 @@
 import Layout from '../components/Layout';
 
 // Utils
-import news from '../utils/offlineNews';
+import news from '../utils/offlineNews.json';
 import shuffle from '../utils/shuffle';
 
 // Styles
 import styles from '../styles/News.module.css';
 import stylesGeneral from '../styles/Styles.module.css';
-
-// function enableApi() {
-//   const newsapilink = "https://newsapi.org/v2/everything?" +
-//     "q=coronavírus&" +
-//     "sortBy=popularity&" +
-//     "apiKey=73c1cb62bd2444f29cda26ce59eb748f"
-
-//   const { stats: news, loading, error } = useStats(newsapilink);
-
-//   if (loading) return <p className={styles.container}> <img src="https://assets.materialup.com/uploads/e21b405b-4e2a-48dc-9181-625a37c1eae8/preview.gif" alt="" srcSet="" /></p>;
-//   if (error) return <p className={styles.container}>Erro ao carregar notícias</p>;
-
-//   return [news, newsapilink];
-// }
 
 export default function News() {
   return (
@@ -52,3 +38,28 @@ export default function News() {
     </Layout>
   );
 }
+
+// import useStats from '../utils/useStats';
+// function enableApi() {
+//   const newsapilink =
+//     'https://newsapi.org/v2/everything?' +
+//     'q=coronavírus&' +
+//     'sortBy=popularity&' +
+//     'apiKey=73c1cb62bd2444f29cda26ce59eb748f';
+//   const { stats: news, loading, error } = useStats(newsapilink);
+//   console.log(newsapilink);
+//   if (loading)
+//     return (
+//       <p className={styles.container}>
+//         <img
+//           src="https://assets.materialup.com/uploads/e21b405b-4e2a-48dc-9181-625a37c1eae8/preview.gif"
+//           alt=""
+//           srcSet=""
+//         />
+//       </p>
+//     );
+//   if (error)
+//     return <p className={styles.container}>Erro ao carregar notícias</p>;
+
+//   return news;
+// }
