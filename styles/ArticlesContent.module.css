@@ -32,8 +32,6 @@
   margin-bottom: 0;
 }
 
-
-
 .sectionTitle .subtitle {
   display: flex;
   justify-content: space-between;
@@ -71,24 +69,40 @@
 
 .sectionContent {
   max-width: 680px;
-  color: rgba(41, 41, 41, 1);
+  color: rgb(41, 41, 41);
   font-style: normal;
   font-weight: 400;
   word-break: break-word;
+  margin-top: 20px;
+}
+
+.sectionContent h2 {
+  margin-top: 20px;
+}
+
+.sectionContent p,
+.sectionContent ul {
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .sectionContent p {
   font-size: 21px;
   line-height: 32px;
 
-  margin-top: 2em;
-  /* margin-bottom: -0.46em; */
-
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
   letter-spacing: -0.003em;
   box-sizing: inherit;
+}
+
+.sectionContent li {
+  list-style: inside;
+  font-size: 18px;
+  list-style-position: outside;
+  margin: 28px 0 0 30px;
+  text-align: baseline;
 }
 
 @media (max-width: 552px) {
