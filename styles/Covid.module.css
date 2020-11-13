@@ -110,6 +110,8 @@
   margin: 0;
   color: #404040;
   font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
 }
 
 .sectionCovidMap .covidMapImg {

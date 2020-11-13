@@ -32,6 +32,8 @@
   margin-bottom: 0;
 }
 
+
+
 .sectionTitle .subtitle {
   display: flex;
   justify-content: space-between;
@@ -49,16 +51,18 @@
 }
 
 @media (max-width: 420px) {
+  .sectionTitle .title {
+    font-size: 2rem;
+  }
+
   .sectionTitle .subtitle {
     flex-direction: column;
   }
   .sectionTitle .author {
-    /* margin-top: 0; */
     font-size: 1.2rem;
   }
   .sectionTitle .date {
     margin-top: 0;
-    /* color: rgba(41, 41, 41, 0.7); */
     font-size: 0.8rem;
   }
 }
@@ -85,16 +89,12 @@
 
   letter-spacing: -0.003em;
   box-sizing: inherit;
-
-
-
 }
 
 @media (max-width: 552px) {
   .sectionContent p {
     font-size: 18px;
     line-height: 28px;
-
     margin-top: 1.56em;
   }
 }
@@ -103,5 +103,5 @@
 
 .sectionTitle,
 .sectionContent {
-  padding: 0 30px;
+  padding: 0 20px;
 }

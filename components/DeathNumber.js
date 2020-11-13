@@ -15,7 +15,7 @@ export default function DeathNumber({ choice }) {
       date
     );
     const formatedDate = `${date.getDate()} de ${month} de ${date.getFullYear()}`;
-    const formatedHour = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    const formatedHour = `${date.getHours()}:${date.getMinutes()}`;
 
     return `${formatedDate} às ${formatedHour}`;
   }
