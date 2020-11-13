@@ -43,7 +43,6 @@
 
 /* Introduction */
 
-
 .introduction {
   display: flex;
   align-items: center;
@@ -53,18 +52,15 @@
   margin: 0 20px 0;
 }
 
-.introduction .svgFormated{
+.introduction .svgFormated {
   width: auto;
   max-height: 360px;
 }
 
-@media (max-width:860px){
-  .introduction .svgFormated{
-
+@media (max-width: 860px) {
+  .introduction .svgFormated {
     max-height: 300px;
   }
-
-
 }
 
 .introductionData {
@@ -83,9 +79,9 @@
     flex-direction: column;
   }
 
-  .introduction .svgFormated{
-    width: auto;
-    max-height: 300px;
+  .introduction .svgFormated {
+    width: 100%;
+    height: auto;
   }
 
   .introductionData {
