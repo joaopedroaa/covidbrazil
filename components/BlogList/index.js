@@ -10,7 +10,7 @@ import styles from '../../styles/Articles.module.css';
 
 const BlogList = ({ allBlogs }) => {
   function truncateSummary(content) {
-    return `${content.slice(0, 190).trimEnd()}...`;
+    return `${content.slice(0, 170).trimEnd()}...`;
   }
 
   return (

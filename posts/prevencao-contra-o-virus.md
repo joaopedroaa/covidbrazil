@@ -4,6 +4,7 @@ author: Ana Beatriz
 date: "13 de novembro de 2020"
 hero_image: ../articles/medium-03.jpg
 hero_image_author: Tetiana SHYSHKINA via Unsplash
+ref: https://www.mpse.mp.br/index.php/coronavirus-covid-19
 ---
 
 O COVID-19 é transmitido principalmente por gotículas que uma pessoa exala quando tosse, espirra ou exala. Essas gotículas permanecem no ar e no chão por um longo período.
