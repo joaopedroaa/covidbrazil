@@ -25,9 +25,10 @@ export default function covid() {
           <p
             className={`${stylesGeneral.description} ${styles.titleDescription}`}
           >
-            Uma família de vírus que causam infecções respiratórias. O novo
-            agente do coronavírus foi descoberto em 2019 após casos registrados
-            na China. Provoca a doença chamada de coronavírus (COVID-19).
+            Uma família de vírus que causam infecções respiratórias. O vírus
+            responsável pelo Covid-19 é apontado como uma variação da família
+            coronavírus, os primeiros foram identificados em meados da década de
+            1960.
           </p>
         </div>
         <img
