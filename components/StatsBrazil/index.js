@@ -7,8 +7,8 @@ export default function Stats({ dataAos }) {
     'https://covid19-brazil-api.now.sh/api/report/v1'
   );
 
-  if (loading) return <p>Carregando cidades do Brasil...</p>;
-  if (error) return <p>Error ao carregar cidades do brasil</p>;
+  if (loading) return <p>Carregando estados do Brasil...</p>;
+  if (error) return <p>Error ao carregar estados do brasil</p>;
 
   return (
     <div className={styles.statsContainer}>
@@ -30,7 +30,15 @@ export default function Stats({ dataAos }) {
             key={cities.uid}
           >
             <h2 className={styles.title}>
-              {cities.state} ({cities.uf})
+              <img
+                className={styles.stateFlags}
+                src={`https://devarthurribeiro.github.io/covid19-brazil-api/static/flags/${cities.uf}.png`}
+                alt={cities.uf}
+              />
+
+              <span>
+                {cities.state} ({cities.uf})
+              </span>
             </h2>
 
             <div className={styles.statsGrid}>
